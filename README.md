@@ -56,6 +56,35 @@ submit your contribution.
 
 ## Submit a contribution
 
+Each participant is requested to provide the following information,
+which will be consolidated in YAML format under the
+[`contributions`](contributions) directory, so that the contribution can
+be integrated in the [CovidR
+Gallery](https://milano-r.github.io/erum2020-covidr-contest)
+
+``` yaml
+# Contribution's title and author.
+title: An Awesome COVID-19 Contribution
+author: The Autor
+# Short name to be used in the website Gallery menu. Can be the same as title.
+menu_entry: Short title
+# URL of the public source code repository
+repository: https://github.com/user/repo
+# The type of contribution and how it can be featured as gallery content. Pick one type.
+# For a shiny app:
+type: shiny
+content: URL of the your shiny web app, e.g. https://user.shinyapps.io/my-app
+# For a general online-published resource (e.g. a website / report):
+type: webpage
+content: URL of the webpage, e.g. https://user.github.io/my-analysis
+# For more complex / heterogeneous contributions, you can create a GitHub
+# Gist (https://gist.github.com/) with the relevant information and pointers
+type: gist
+content: <script...> # you can place here what you get from the "Embed" button
+```
+
+### How to submit
+
 You can submit your contribution with one of the following methods
 
 1.  **Pull Request**
