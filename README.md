@@ -1,6 +1,6 @@
 # eRum2020 CovidR contest
 
-[eRum2020](https://2020.erum.io/) is launching the “CovidR” contest: any work done with R around the topic of the COVID-19 pandemic is welcome and the best one will be invited to present at eRum2020. Contributions can be submitted **until May 25**. The winner will be announced on **June 15**.
+[eRum2020](https://2020.erum.io/) is launching the “CovidR” contest: any work done with R around the topic of the COVID-19 pandemic is welcome and the best one will be invited to present at eRum2020. Contributions can be submitted **until May 25th**. The winner will be announced on **June 15th**.
 
 **How to participate to CovidR**
 
