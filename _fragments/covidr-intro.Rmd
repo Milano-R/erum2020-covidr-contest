@@ -1,0 +1,34 @@
+---
+output: html_fragment
+---
+
+[eRum2020](https://2020.erum.io/) is launching the “CovidR” contest: any work done with R around the topic of the COVID-19 pandemic is welcome and the best one will be invited to present at eRum2020. Contributions can be submitted **until May 25th**. The winner will be announced on **June 15th**.
+
+**How to participate to CovidR**
+
+- Provide us with your contribution before May 25th directly on this GitHub repository, following the instructions in the ['Submit'](`r submit_link`) section.
+- A GitHub account is needed in order to submit a contribution.
+
+**What will you get** by participating to CovidR
+
+- We will feature all contributions in a dedicated gallery website, which will allow the community to enjoy them and provide feedback.
+- We will post contributions on our social media.
+- The winner of the contest will be invited to present at [eRum2020](https://2020.erum.io/)
+
+**How to win**
+
+- An internal jury will pick the winner by evaluating:
+  - technical quality of the work;
+  - popularity of the work among the community - based on thumbs up on our gallery.
+- The winner will be announced on June 15th. 
+
+**Participation rules**
+
+- Any work or analysis must be performed starting from official data (governmental, institutional, national or international), providing complete reference to sources.
+- Data used can directly refer to the SARS-CoV-2 outbreak (official number of cases, tests performed, viral genome sequences, ...) or to different metrics that can affect the course of the infection if put in the context of the outbreak (demography, population density, census, geographic distributions, movements, ...).
+- Work can refer to a single specific country, a group of countries or the whole globe.
+- Work or analyses must wholly or at least for a relevant part rely on R-based analytics. 
+- Data and source code must be open sourced and available through an open repository.
+- Work can be of any kind, from original data analyses, models, to interactive dashboards or infographics. 
+
+If you have general questions you can always contact us at [covidrcontest@erum.io](mailto:covidrcontest@erum.io), otherwise we recommend using the Issue/Pull Request submission mechanism as a channel for discussing how you can submit your contribution.
