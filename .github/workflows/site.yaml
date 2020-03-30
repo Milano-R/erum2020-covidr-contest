@@ -50,7 +50,7 @@ jobs:
           path: contest/_site
 
       - name: Deploy to GitHub Pages
-        if: github.ref == 'refs/heads/master'
+        if: github.ref == 'refs/heads/feature/initial-setup'
         uses: crazy-max/ghaction-github-pages@v1.3.0
         with:
           target_branch: gh-pages
