@@ -4,7 +4,7 @@ output:
     css: assets/styles.css
 navbar:
   title: eRum2020 CovidR Contest
-  type: inverse
+  type: erum2020
   left:
     - text: ""
       icon: fa-home

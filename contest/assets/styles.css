@@ -1,3 +1,63 @@
+/* ========================================================================== */
+/* Custom navbar with eRum2020 colors (type: erum2020 in _site.yml) */
+/* ---------------------------------------------------------------------------*/
+
+/* navbar background */
+.navbar-erum2020 {
+  background-color: #2b3990;
+  border-color: #0c154d;
+}
+/* brand */
+.navbar-erum2020 .navbar-brand {
+  color: #fff;
+}
+.navbar-erum2020 .navbar-brand:focus,
+.navbar-erum2020 .navbar-brand:hover {
+ color: #ec7623;
+ background-color: #0c154d;
+}
+/* top-level and drop-down entries */
+.navbar-erum2020 .navbar-nav > li > a,
+.navbar-erum2020 .navbar-nav .dropdown-menu > li > a {
+  color: #fff;
+  background-color: inherit;
+}
+.navbar-erum2020 .navbar-nav > li > a:focus,
+.navbar-erum2020 .navbar-nav > li > a:hover,
+.navbar-erum2020 .navbar-nav .dropdown-menu > li > a:focus,
+.navbar-erum2020 .navbar-nav .dropdown-menu > li > a:hover {
+  color: #ec7623;
+  background-color: #0c154d;
+}
+.navbar-erum2020 .navbar-nav > .active > a,
+.navbar-erum2020 .navbar-nav > .active > a:focus,
+.navbar-erum2020 .navbar-nav > .active > a:hover,
+.navbar-erum2020 .navbar-nav .dropdown-menu > .active > a,
+.navbar-erum2020 .navbar-nav .dropdown-menu > .active > a:focus,
+.navbar-erum2020 .dropdown-menu .navbar-nav > .active > a:hover {
+  color: #0c154d;
+  background-color: #778bc5;
+}
+/* collapsed navbar button */
+.navbar-erum2020 .navbar-nav .dropdown-menu {
+  background-color: #2b3990;
+}
+.navbar-erum2020 .navbar-toggle:focus,
+.navbar-erum2020 .navbar-toggle:hover {
+  background-color: #0c154d;
+}
+.navbar-erum2020 .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+.navbar-erum2020 .navbar-toggle:focus .icon-bar,
+.navbar-erum2020 .navbar-toggle:hover .icon-bar {
+  background-color: #ec7623;
+}
+
+
+/* ========================================================================== */
+/* General customization of gallery pages */
+/* ---------------------------------------------------------------------------*/
 
 /* Hide the usual title header: it is re-created inside each page
    and customized with metadata for the galery pages */
