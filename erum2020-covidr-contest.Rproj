@@ -16,3 +16,4 @@ AutoAppendNewline: Yes
 StripTrailingWhitespace: Yes
 
 BuildType: Website
+WebsitePath: contest

@@ -1,0 +1,32 @@
+
+/* Hide the usual title header: it is re-created inside each page
+   and customized with metadata for the galery pages */
+#header {
+  display: none;
+}
+
+/* we do not want extra space below the galler-after footer */
+body {
+  padding-bottom: 0 !important;
+}
+
+/* Customized style for the before and after elements and their content */
+
+/* There is no padding nor margin in the main body container (see main.js) */
+.gallery-before .row, .gallery-after .row  {
+  padding: 0 10px;
+  margin: 0; /* .row has negative margin */
+}
+.gallery-before {
+  margin-top: 10px;
+}
+
+/* Smaller space around hr */
+.gallery-before hr, .gallery-after hr {
+  margin: 10px 0;
+}
+
+/* Sensible default for non-responsive content */
+#gallery-iframe {
+  height: 80vh;
+}

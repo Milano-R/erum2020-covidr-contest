@@ -1,0 +1,9 @@
+---
+title: Submit
+---
+
+<h1>Submit you contribution</h1>
+
+```{r, echo=FALSE, results='asis'}
+cat(knitr::knit(quiet = TRUE, text = readLines("../CONTRIBUTING.md")[-1]))
+```

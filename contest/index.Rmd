@@ -1,0 +1,5 @@
+---
+title: "eRum2020 CovidR Contest"
+site: rmdgallery::gallery_site
+---
+
