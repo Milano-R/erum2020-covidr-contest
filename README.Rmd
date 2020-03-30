@@ -1,7 +1,7 @@
 ---
 output: github_document
 ################################################################################
-# NOTE: 
+# NOTE:
 # Make sure you have added an executable pre-commit hook in your local checkout 
 #   .git/hooks/pre-commit
 # to prevent accidental commits of README.Rmd not re-knitted to README.md.
