@@ -1,0 +1,6 @@
+Imports:
+  htmltools,
+  rmarkdown,
+  rmdgallery
+Remotes:
+  riccardoporreca/rmdgallery@feature/11-fix-output_file
