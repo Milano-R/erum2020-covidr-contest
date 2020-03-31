@@ -24,11 +24,13 @@ can be submitted **until May 25th**. The winner will be announced on
 
 **How to win**
 
-  - An internal jury will pick the winner by evaluating:
-      - technical quality of the work;
-      - popularity of the work among the community - based on thumbs up
-        on our gallery.
-  - The winner will be announced on June 15th.
+An internal jury will pick the winner by evaluating:
+
+  - technical quality of the work;
+  - popularity of the work among the community - based on thumbs up on
+    our gallery.
+
+The winner will be announced on June 15th.
 
 **Participation rules**
 
