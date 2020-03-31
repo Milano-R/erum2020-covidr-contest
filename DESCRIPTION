@@ -3,4 +3,4 @@ Imports:
   rmarkdown,
   rmdgallery
 Remotes:
-  riccardoporreca/rmdgallery@feature/11-fix-output_file
+  riccardoporreca/rmdgallery
