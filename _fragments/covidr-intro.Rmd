@@ -6,14 +6,14 @@ output: html_fragment
 
 **How to participate to CovidR**
 
-- Provide us with your contribution before May 25th directly on this GitHub repository, following the instructions in the ['Submit'](`r submit_link`) section.
+- Provide us with your contribution by May 25th directly on the GitHub repository, following the instructions in the ['Submit'](`r submit_link`) section.
 - A GitHub account is needed in order to submit a contribution.
 
 **What will you get** by participating to CovidR
 
-- We will feature all contributions in a dedicated gallery website, which will allow the community to enjoy them and provide feedback.
+- We will feature all contributions in a dedicated [CovidR Gallery](https://milano-r.github.io/erum2020-covidr-contest) website, which will allow the community to enjoy them and provide feedback.
 - We will post contributions on our social media.
-- The winner of the contest will be invited to present at [eRum2020](https://2020.erum.io/)
+- The winner of the contest will be invited to present at [eRum2020](https://2020.erum.io/).
 
 **How to win**
 
@@ -33,4 +33,4 @@ The winner will be announced on June 15th.
 - Data and source code must be open sourced and available through an open repository.
 - Work can be of any kind, from original data analyses, models, to interactive dashboards or infographics. 
 
-If you have general questions you can always contact us at [covidrcontest@erum.io](mailto:covidrcontest@erum.io), otherwise we recommend using the Issue/Pull Request submission mechanism as a channel for discussing how you can submit your contribution.
+If you have general questions you can always contact us at [covidrcontest@erum.io](mailto:covidrcontest@erum.io), otherwise we recommend using the [Issue / Pull Request submission mechanism](`r submit_link`) as a channel for discussing how you can submit your contribution.

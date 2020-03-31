@@ -9,18 +9,20 @@ can be submitted **until May 25th**. The winner will be announced on
 
 **How to participate to CovidR**
 
-  - Provide us with your contribution before May 25th directly on this
-    GitHub repository, following the instructions in the
+  - Provide us with your contribution by May 25th directly on the GitHub
+    repository, following the instructions in the
     [‘Submit’](#submit-a-contribution) section.
   - A GitHub account is needed in order to submit a contribution.
 
 **What will you get** by participating to CovidR
 
-  - We will feature all contributions in a dedicated gallery website,
-    which will allow the community to enjoy them and provide feedback.
+  - We will feature all contributions in a dedicated [CovidR
+    Gallery](https://milano-r.github.io/erum2020-covidr-contest)
+    website, which will allow the community to enjoy them and provide
+    feedback.
   - We will post contributions on our social media.
   - The winner of the contest will be invited to present at
-    [eRum2020](https://2020.erum.io/)
+    [eRum2020](https://2020.erum.io/).
 
 **How to win**
 
@@ -52,16 +54,15 @@ The winner will be announced on June 15th.
     interactive dashboards or infographics.
 
 If you have general questions you can always contact us at
-<covidrcontest@erum.io>, otherwise we recommend using the Issue/Pull
-Request submission mechanism as a channel for discussing how you can
-submit your contribution.
+<covidrcontest@erum.io>, otherwise we recommend using the [Issue / Pull
+Request submission mechanism](#submit-a-contribution) as a channel for
+discussing how you can submit your contribution.
 
 ## Submit a contribution
 
-Each participant is requested to provide the following information,
-which will be consolidated in YAML format under the
-[`contributions`](contributions) directory, so that the contribution can
-be integrated in the [CovidR
+Each participant is requested to provide the following information in
+YAML format, which will allow the contribution to be integrated and
+visible in the [CovidR
 Gallery](https://milano-r.github.io/erum2020-covidr-contest)
 
 ``` yaml
@@ -87,35 +88,40 @@ content: <script...> # you can place here what you get from the "Embed" button
 
 ### How to submit
 
-You can submit your contribution with one of the following methods
+You can submit your contribution **until May 25th** using one of the
+following methods
 
 1.  **Pull Request**
-      - **Fork** this repository, fill the information above for your
-        contribution in a **new `.yml` file** under the `contributions`
-        directory.
+      - [**Fork the
+        repository**](https://github.com/Milano-R/erum2020-covidr-contest/fork)
+        and create a **new `.yml` file** under
+        [`contest/contributions`](https://github.com/Milano-R/erum2020-covidr-contest/tree/master/contest/contributions),
+        containing the information above for your contribution.
           - The file-name should somehow identify your contribution, we
             recommend using something like `name-short-title.yml`.
-      - You can preview your contribution in the [CovidR
+      - You can preview the integration of your contribution in the
+        [CovidR
         Gallery](https://milano-r.github.io/erum2020-covidr-contest)
         from a local clone of your fork via
           - `remotes::install_deps()`
-          - `browseURL(rmarkdown::render_site())`
+          - `browseURL(file.path("contest",
+            rmarkdown::render_site("contest")))`
       - Create a **Pull Request**, making sure you “Allow edits from
         maintainers”.
       - Send us an email at <covidrcontest@erum.io> with the link to the
         Pull Request.
 2.  **Create an Issue**
-      - You can open a [**New
-        issue**](https://github.com/riccardoporreca/test-github-community/issues/new/choose)
+      - You can open a [**submit the contribution as new
+        Issue**](https://github.com/riccardoporreca/test-github-community/issues/new/choose)
         (**WiP link**) to provide the required information.
-      - We will follow up and create the relevant `.yml` file and
-        corresponding Pull Request.
+      - We will follow up by creating the relevant `.yml` file and
+        corresponding pull request.
       - Send us an email at <covidrcontest@erum.io> with the link to the
         Issue.
 
 Your submission will be officially accepted once the corresponding Pull
-Request is approved and merged. Your contribution will then appear in
-the [CovidR
+Request is reviewed, approved. and merged. Your contribution will then
+appear in the [CovidR
 Gallery](https://milano-r.github.io/erum2020-covidr-contest).
 
 If you are not sure about some of the fields, we encourage you to open a
