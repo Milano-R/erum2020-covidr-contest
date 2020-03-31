@@ -3,7 +3,7 @@ output:
   html_document:
     css: assets/styles.css
 navbar:
-  title: eRum2020 CovidR Contest
+  title: eRum2020::CovidR
   type: erum2020
   left:
     - text: ""
