@@ -33,30 +33,65 @@ gallery:
         icon: fa-folder-open
   include_before: |
     {{htmltools::tagList(
-        htmltools::tags$script(src="assets/main.js"),
-        htmltools::div(
-          class = "row",
-          htmltools::h3(title, style = htmltools::css(display = "inline")),
-          htmltools::tags$em("by", author),
-          htmltools::tags$sup(
-            "[", htmltools::a("repository", href = repository, target = "_blank", .noWS = "outside"), "]"
-          )
+      htmltools::tags$script(src="assets/main.js"),
+      htmltools::div(
+        class = "row",
+        htmltools::h3(title, style = htmltools::css(display = "inline")),
+        htmltools::tags$em("by", author),
+        htmltools::tags$sup(
+          "[", htmltools::a("repository", href = repository, target = "_blank", .noWS = "outside"), "]"
         ),
-        htmltools::hr()
+        htmltools::tagList(
+          bsplus::bs_attach_collapse(
+            bsplus::bs_button("Like this contribution!", button_type = "primary"),
+            "utterances"
+          ),
+          bsplus::bs_collapse(
+            id = "utterances",
+            content = htmltools::div(
+              htmltools::HTML('
+                        <script src="https://utteranc.es/client.js"
+                                repo="riccardoporreca/test-utterances"
+                                issue-term="pathname"
+                                label=":+1:"
+                                theme="github-light"
+                                crossorigin="anonymous"
+                                async>
+                        </script>'
+              )
+            )
+          )
+        )
+      ),
+      htmltools::hr()
     )}}
   include_after: |
     <hr/><div class="row">
       <span>eRum2020 CovidR Contest</span>
+        {{htmltools::tagList(
+          bsplus::bs_attach_collapse(
+            bsplus::bs_button("Like this contribution!", button_type = "primary"),
+            "utterances"
+          ),
+          bsplus::bs_collapse(
+            id = "utterances",
+            content = htmltools::div(
+              "AAAAAAAAAAAAAAAAA",
+              htmltools::HTML('
+                        <script src="https://utteranc.es/client.js"
+                                repo="riccardoporreca/test-utterances"
+                                issue-term="pathname"
+                                label=":+1:"
+                                theme="github-light"
+                                crossorigin="anonymous"
+                                async>
+                        </script>'
+              )
+            )
+          )
+        )}}
       <span style="float: right;"><em>
         Created with <a href="https://riccardoporreca.github.io/rmdgallery" target="_blank">rmdgallery</a>
         {{utils::packageVersion("rmdgallery")}}
       </em></span>
     </div><hr/>
-    <script src="https://utteranc.es/client.js"
-            repo="riccardoporreca/test-utterances"
-            issue-term="pathname"
-            label=":+1:"
-            theme="github-light"
-            crossorigin="anonymous"
-            async>
-    </script>
