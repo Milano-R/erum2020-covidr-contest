@@ -13,7 +13,7 @@ navbar:
       icon: fa-info
       href: about.html
     - text: "Submit"
-      icon: fa-info
+      icon: fa-arrow-circle-up
       href: submit.html
   right:
     - text: "eRum2020"
@@ -30,7 +30,7 @@ gallery:
   navbar:
     left:
       - text: "Gallery"
-        icon: fa-gear
+        icon: fa-folder-open
   include_before: |
     {{htmltools::tagList(
         htmltools::tags$script(src="assets/main.js"),
