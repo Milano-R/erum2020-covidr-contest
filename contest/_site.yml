@@ -49,8 +49,9 @@ gallery:
                 <span class="fa fa-thumbs-up"></span> Like this contribution!
               </button>
               <div class="collapse" id="utterances">
+                !!!CHANGE BEFORE MERGING TO MASTER!!!
                 <script src="https://utteranc.es/client.js"
-                        repo="riccardoporreca/test-utterances" <!-- **!!!CHANGE BEFORE MERGING TO MASTER!!!** -->
+                        repo="riccardoporreca/test-utterances"
                         issue-term="pathname" label=":+1:"
                         theme="github-light"
                         crossorigin="anonymous" async>
