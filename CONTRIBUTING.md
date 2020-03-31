@@ -40,7 +40,7 @@ You can submit your contribution **until May 25th** using one of the following m
     - Send us an email at [covidrcontest@erum.io](mailto:covidrcontest@erum.io) with the link to the Pull Request.
 
 2. **Create an Issue**
-    - You can open a [**submit the contribution as new Issue**](https://github.com/riccardoporreca/test-github-community/issues/new/choose) (**WiP link**) to provide the required information.
+    - You can open a [**submit the contribution as new Issue**](https://github.com/riccardoporreca/test-github-community/issues/new/choose) **!!!CHANGE BEFORE MERGING TO MASTER!!!** to provide the required information.
     - We will follow up by creating the relevant `.yml` file and corresponding pull request.
     - Send us an email at [covidrcontest@erum.io](mailto:covidrcontest@erum.io) with the link to the Issue.
 
