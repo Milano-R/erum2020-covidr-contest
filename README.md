@@ -90,36 +90,31 @@ content: <script...> # you can place here what you get from the "Embed" button
 You can submit your contribution with one of the following methods
 
 1.  **Pull Request**
-
-<!-- end list -->
-
-  - **Fork** this repository, fill the information above for your
-    contribution in a **new `.yml` file** under the `contributions`
-    directory.
-      - The file-name should somehow identify your contribution, we
-        recommend using something like `name-short-title.yml`.
-  - You can preview your contribution in the [CovidR
-    Gallery](https://milano-r.github.io/erum2020-covidr-contest) from a
-    local clone of your fork via
-      - `remotes::install_deps()`
-      - `browseURL(rmarkdown::render_site())`
-  - Create a **Pull Request**, making sure you “Allow edits from
-    maintainers”.
-
-<!-- end list -->
-
+      - **Fork** this repository, fill the information above for your
+        contribution in a **new `.yml` file** under the `contributions`
+        directory.
+          - The file-name should somehow identify your contribution, we
+            recommend using something like `name-short-title.yml`.
+      - You can preview your contribution in the [CovidR
+        Gallery](https://milano-r.github.io/erum2020-covidr-contest)
+        from a local clone of your fork via
+          - `remotes::install_deps()`
+          - `browseURL(rmarkdown::render_site())`
+      - Create a **Pull Request**, making sure you “Allow edits from
+        maintainers”.
+      - Send us an email at <covidrcontest@erum.io> with the link to the
+        Pull Request.
 2.  **Create an Issue**
+      - You can open a [**New
+        issue**](https://github.com/riccardoporreca/test-github-community/issues/new/choose)
+        (**WiP link**) to provide the required information.
+      - We will follow up and create the relevant `.yml` file and
+        corresponding Pull Request.
+      - Send us an email at <covidrcontest@erum.io> with the link to the
+        Issue.
 
-<!-- end list -->
-
-  - You can open a [**New
-    issue**](https://github.com/riccardoporreca/test-github-community/issues/new/choose)
-    (**WiP link**) to provide the required information.
-  - We will follow up and create the relevant `.yml` file and
-    corresponding pull request.
-
-Your submission will be officially accepted once the corresponding pull
-request is approved and merged. Your contribution will then appear in
+Your submission will be officially accepted once the corresponding Pull
+Request is approved and merged. Your contribution will then appear in
 the [CovidR
 Gallery](https://milano-r.github.io/erum2020-covidr-contest).
 
