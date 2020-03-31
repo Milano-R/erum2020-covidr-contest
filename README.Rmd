@@ -20,7 +20,7 @@ knitr::opts_chunk$set(
 submit_link <- "#submit-a-contribution"
 ```
 
-# eRum2020 CovidR contest
+# eRum2020 CovidR Contest
 
 ```{r child='_fragments/covidr-intro.Rmd'}
 ```

@@ -1,5 +1,5 @@
 
-# eRum2020 CovidR contest
+# eRum2020 CovidR Contest
 
 [eRum2020](https://2020.erum.io/) is launching the “CovidR” contest: any
 work done with R around the topic of the COVID-19 pandemic is welcome
