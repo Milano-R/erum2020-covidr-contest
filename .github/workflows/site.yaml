@@ -35,7 +35,6 @@ jobs:
 
       - name: Install dependencies
         run: |
-          remotes::install_github('riccardoporreca/rmdgallery')
           remotes::install_deps(dependencies = TRUE)
         shell: Rscript {0}
 
