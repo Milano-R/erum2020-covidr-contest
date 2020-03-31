@@ -3,4 +3,4 @@ Imports:
   rmarkdown,
   rmdgallery
 Remotes:
-  riccardoporreca/rmdgallery@master
+  riccardoporreca/rmdgallery
