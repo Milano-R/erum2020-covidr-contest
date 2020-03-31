@@ -84,7 +84,7 @@ content: URL of the webpage, e.g. https://user.github.io/my-analysis
 # For more complex / heterogeneous contributions, you can create a GitHub
 # Gist (https://gist.github.com/) with the relevant information and pointers:
 type: gist
-content: <script...> # you can place here what you get from the "Embed" button
+content: <script...> # place here what you get from the "Embed" button
 ```
 
 If you are not sure about some of the fields, we encourage you to still
