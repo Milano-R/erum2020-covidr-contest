@@ -32,63 +32,39 @@ gallery:
       - text: "Gallery"
         icon: fa-folder-open
   include_before: |
-    {{htmltools::tagList(
-      htmltools::tags$script(src="assets/main.js"),
-      htmltools::div(
-        class = "row",
-        htmltools::h3(title, style = htmltools::css(display = "inline")),
-        htmltools::tags$em("by", author),
-        htmltools::tags$sup(
-          "[", htmltools::a("repository", href = repository, target = "_blank", .noWS = "outside"), "]"
-        ),
-        htmltools::tagList(
-          bsplus::bs_attach_collapse(
-            bsplus::bs_button("Like this contribution!", button_type = "primary"),
-            "utterances-top"
+    {{
+      htmltools::tagList(
+        htmltools::tags$script(src = "assets/main.js"),
+        htmltools::div(
+          class = "row",
+          htmltools::h3(title, style = htmltools::css(display = "inline")),
+          htmltools::tags$em("by", author),
+          htmltools::tags$sup(
+            "[", htmltools::a("repository", href = repository, target = "_blank", .noWS = "outside"), "]"
           ),
-          bsplus::bs_collapse(
-            id = "utterances-top",
-            content = htmltools::div(
-              htmltools::HTML('
-                        <script src="https://utteranc.es/client.js"
-                                repo="riccardoporreca/test-utterances"
-                                issue-term="pathname"
-                                label=":+1:"
-                                theme="github-light"
-                                crossorigin="anonymous"
-                                async>
-                        </script>'
-              )
-            )
-          )
+          htmltools::span(
+            class = "like",
+            htmltools::HTML('
+              <button class="btn btn-primary" data-toggle="collapse" data-target="#utterances">
+                <span class="fa fa-thumbs-up"></span> Like this contribution!
+              </button>
+              <div class="collapse" id="utterances">
+                <script src="https://utteranc.es/client.js"
+                        repo="riccardoporreca/test-utterances"
+                        issue-term="pathname" label=":+1:"
+                        theme="github-light"
+                        crossorigin="anonymous" async>
+                </script>
+              </div>
+            ')
+          ),
+          htmltools::hr()
         )
-      ),
-      htmltools::hr()
-    )}}
+      )
+    }}
   include_after: |
     <hr/><div class="row">
       <span>eRum2020 CovidR Contest</span>
-        {{htmltools::tagList(
-          bsplus::bs_attach_collapse(
-            bsplus::bs_button("Like this contribution!", button_type = "primary"),
-            "utterances-bottom"
-          ),
-          bsplus::bs_collapse(
-            id = "utterances-bottom",
-            content = htmltools::div(
-              htmltools::HTML('
-                        <script src="https://utteranc.es/client.js"
-                                repo="riccardoporreca/test-utterances"
-                                issue-term="pathname"
-                                label=":+1:"
-                                theme="github-light"
-                                crossorigin="anonymous"
-                                async>
-                        </script>'
-              )
-            )
-          )
-        )}}
       <span style="float: right;"><em>
         Created with <a href="https://riccardoporreca.github.io/rmdgallery" target="_blank">rmdgallery</a>
         {{utils::packageVersion("rmdgallery")}}

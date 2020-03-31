@@ -1,5 +1,4 @@
 Imports:
-  bsplus,
   htmltools,
   rmarkdown,
   rmdgallery

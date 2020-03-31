@@ -53,6 +53,22 @@
 .navbar-erum2020 .navbar-toggle:hover .icon-bar {
   background-color: #ec7623;
 }
+/* like button */
+.like > .btn {
+  padding: 3px 12px;
+  vertical-align: top;
+  margin-left: 25px;
+}
+.like > .btn-primary {
+  color: #fff;
+  background-color: #2b3990;
+  border-color: #2b3990;
+}
+.like > .btn-primary:focus,
+.like > .btn-primary:hover {
+  color: #0c154d;
+  background-color: #778bc5;
+}
 
 
 /* ========================================================================== */
