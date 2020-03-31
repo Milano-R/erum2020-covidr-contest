@@ -67,6 +67,8 @@
 
 /* we do not want extra space below the galler-after footer */
 body {
+  font-family: "Roboto", Sans-serif;
+  color: #696969;
   padding-bottom: 0 !important;
 }
 
