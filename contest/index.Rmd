@@ -3,3 +3,30 @@ title: "eRum2020 CovidR Contest"
 site: rmdgallery::gallery_site
 ---
 
+<h1>Welcome to the CovidR Contest!</h1>
+
+
+[**CovidR**](about.html) is an open-source contest launched by the 2020 European R users meeting ([**eRum2020**](https://2020.erum.io/)), featuring any work done with R around the topic of the [**COVID-19 pandemic**](https://www.who.int/emergencies/diseases/novel-coronavirus-2019).
+
+Contributions can be **[submitted](submit.html) until May 25th** and are made available in this website, where the wider community is invited to provide feedback. The winner will be announced on **June 15th**.
+
+The current submissions feature the following contributions:
+
+```{r, echo=FALSE}
+meta <- rmdgallery::gallery_site_config()$gallery$meta
+htmltools::tags$ul(
+  lapply(names(meta), function(name) {
+    href <- sprintf("%s.html", name)
+    one_meta <- meta[[name]]
+    htmltools::tags$li(
+      '"', htmltools::a(
+        href = href, one_meta$title, .noWS = "outside"
+      ), '"',
+      "by", one_meta$author,
+      "[", htmltools::a(
+        "repository", href = one_meta$repository, target = "_blank", .noWS = "outside"
+      ), "]"
+    )
+  })
+)
+```
