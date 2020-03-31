@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: "About :: eRum2020 CovidR"
 ---
 
 <h1>eRum2020 CovidR contest</h1>
