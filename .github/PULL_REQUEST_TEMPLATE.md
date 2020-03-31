@@ -1,5 +1,7 @@
 Thanks for contributing your submission to the eRum2020 CovidR contest.
 
+**For CovidR contributors:**
+
 - [ ] The title of this PR reflects your contribution
 - [ ] The pull request only includes one new `.yml` file under `contest/contributions`
 - [ ] Make sure "Enable edits from maintainers" is checked
@@ -9,7 +11,7 @@ Thanks for contributing your submission to the eRum2020 CovidR contest.
 
 ---
 
-For CovidR maintainers
+For CovidR maintainers:
 
 - [ ] Label the PR as "submission"
 - [ ] Check the validity of the submission
