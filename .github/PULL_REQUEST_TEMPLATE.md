@@ -27,4 +27,3 @@ For CovidR maintainers:
     _Please avoid using comments or other reactions_
     ```
 - [ ] Provide here the link to the contribution as published to the gallery: https://milano-r.github.io/erum2020-covidr-contest/___.html
-- [ ] Lock the conversation
