@@ -44,10 +44,10 @@ gallery:
         htmltools::tagList(
           bsplus::bs_attach_collapse(
             bsplus::bs_button("Like this contribution!", button_type = "primary"),
-            "utterances"
+            "utterances-top"
           ),
           bsplus::bs_collapse(
-            id = "utterances",
+            id = "utterances-top",
             content = htmltools::div(
               htmltools::HTML('
                         <script src="https://utteranc.es/client.js"
@@ -71,12 +71,11 @@ gallery:
         {{htmltools::tagList(
           bsplus::bs_attach_collapse(
             bsplus::bs_button("Like this contribution!", button_type = "primary"),
-            "utterances"
+            "utterances-bottom"
           ),
           bsplus::bs_collapse(
-            id = "utterances",
+            id = "utterances-bottom",
             content = htmltools::div(
-              "AAAAAAAAAAAAAAAAA",
               htmltools::HTML('
                         <script src="https://utteranc.es/client.js"
                                 repo="riccardoporreca/test-utterances"
