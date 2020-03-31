@@ -68,23 +68,28 @@ Gallery](https://milano-r.github.io/erum2020-covidr-contest)
 ``` yaml
 # Contribution's title and author.
 title: An Awesome COVID-19 Contribution
-author: The Autor
+author: The Author
 # Short name to be used in the website Gallery menu. Can be the same as title.
 menu_entry: Short title
 # URL of the public source code repository
 repository: https://github.com/user/repo
-# The type of contribution and how it can be featured as gallery content. Pick one type.
-# For a shiny app:
+# The type of contribution and how it can be featured as gallery content.
+# Keep only the type and content relevant to your contribution.
+# For a Shiny app:
 type: shiny
-content: URL of the your shiny web app, e.g. https://user.shinyapps.io/my-app
+content: URL of your Shiny app, e.g. https://user.shinyapps.io/my-app
 # For a general online-published resource (e.g. a website / report):
 type: webpage
 content: URL of the webpage, e.g. https://user.github.io/my-analysis
 # For more complex / heterogeneous contributions, you can create a GitHub
-# Gist (https://gist.github.com/) with the relevant information and pointers
+# Gist (https://gist.github.com/) with the relevant information and pointers:
 type: gist
 content: <script...> # you can place here what you get from the "Embed" button
 ```
+
+If you are not sure about some of the fields, we encourage you to still
+open a Pull Request or a New Issue as described below, as part of which
+we will discuss and take care of the remaining details.
 
 ### How to submit
 
@@ -123,10 +128,6 @@ Your submission will be officially accepted once the corresponding Pull
 Request is reviewed, approved. and merged. Your contribution will then
 appear in the [CovidR
 Gallery](https://milano-r.github.io/erum2020-covidr-contest).
-
-If you are not sure about some of the fields, we encourage you to open a
-Pull Request or a New Issue, as part of which we will discuss and take
-care of the remaining details.
 
 If you have any problems you can also contact us at:
 <covidrcontest@erum.io>
