@@ -33,43 +33,5 @@ gallery:
     left:
       - text: "Gallery"
         icon: fa-folder-open
-  include_before: |
-    {{
-      htmltools::tagList(
-        htmltools::tags$script(src = "assets/main.js"),
-        htmltools::div(
-          class = "row",
-          htmltools::h3(title, style = htmltools::css(display = "inline")),
-          htmltools::tags$em("by", author),
-          htmltools::tags$sup(
-            "[", htmltools::a("repository", href = repository, target = "_blank", .noWS = "outside"), "]"
-          ),
-          htmltools::span(
-            class = "like",
-            htmltools::HTML('
-              <button class="btn btn-primary" data-toggle="collapse" data-target="#utterances">
-                <span class="fa fa-thumbs-up"></span> Like this contribution!
-              </button>
-              <div class="collapse" id="utterances">
-                !!!CHANGE BEFORE MERGING TO MASTER!!!
-                <script src="https://utteranc.es/client.js"
-                        repo="riccardoporreca/test-utterances"
-                        issue-term="pathname" label=":+1:"
-                        theme="github-light"
-                        crossorigin="anonymous" async>
-                </script>
-              </div>
-            ')
-          ),
-          htmltools::hr()
-        )
-      )
-    }}
-  include_after: |
-    <hr/><div class="row">
-      <span>eRum2020 CovidR Contest</span>
-      <span style="float: right;"><em>
-        Created with <a href="https://riccardoporreca.github.io/rmdgallery" target="_blank">rmdgallery</a>
-        {{utils::packageVersion("rmdgallery")}}
-      </em></span>
-    </div><hr/>
+  include_before: _includes/before_gallery.R
+  include_after: _includes/after_gallery.html
