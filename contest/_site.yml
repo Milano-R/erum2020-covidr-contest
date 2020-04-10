@@ -2,6 +2,8 @@ name: "erum2020-covidr-contest"
 output:
   html_document:
     css: assets/styles.css
+    includes:
+      in_header: "_includes/favicon.html"
 navbar:
   title: eRum2020::CovidR
   type: erum2020
