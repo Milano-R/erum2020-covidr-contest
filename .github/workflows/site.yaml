@@ -63,7 +63,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GHPAGES_DEPLOY_TOKEN }}
         run: |
           source("contest/_tools/utterances-issues.R")
-          comment <- readLines("_tools/vote-comment.md")
+          comment <- readLines("contest/_tools/vote-comment.md")
           create_utterances_issues(
             meta = rmdgallery::gallery_site_config("contest")$gallery$meta,
             # !!!CHANGE BEFORE MERGING TO MASTER!!!
