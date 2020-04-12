@@ -56,11 +56,13 @@ jobs:
           target_branch: gh-pages
           build_dir: contest/_site
         env:
-          GITHUB_TOKEN: ${{ secrets.GHPAGES_DEPLOY_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Create utterances issues with voting comment
         if: github.ref == 'refs/heads/feature/initial-setup'
         env:
+          # !!!CHANGE BEFORE MERGING TO MASTER!!!
           GITHUB_TOKEN: ${{ secrets.GHPAGES_DEPLOY_TOKEN }}
+          # GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           source("contest/_tools/utterances-issues.R")
           comment <- readLines("contest/_tools/vote-comment.md")
