@@ -53,19 +53,21 @@
 .navbar-erum2020 .navbar-toggle:hover .icon-bar {
   background-color: #ec7623;
 }
-/* like button */
-.like > .btn {
-  padding: 3px 12px;
-  vertical-align: top;
-  margin-left: 25px;
+/* badge-looking button */
+.btn-badge {
+	height: 20px;
+	padding: 0 5px;
+	border-radius: 3px;
+	font-family: DejaVu Sans,Verdana,Geneva,sans-serif;
+	font-size: 11px;
 }
-.like > .btn-primary {
+.btn-badge {
   color: #fff;
   background-color: #2b3990;
   border-color: #2b3990;
 }
-.like > .btn-primary:focus,
-.like > .btn-primary:hover {
+.btn-badge:focus,
+.btn-badge:hover {
   color: #0c154d;
   background-color: #778bc5;
 }
@@ -106,5 +108,5 @@ body {
 
 /* Sensible default for non-responsive content */
 #gallery-iframe {
-  height: 80vh;
+  height: 75vh;
 }

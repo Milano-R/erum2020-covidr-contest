@@ -14,6 +14,14 @@ The current submissions feature the following contributions:
 
 ```{r, echo=FALSE}
 meta <- rmdgallery::gallery_site_config()$gallery$meta
+
+# create shields.yml with the dynamic label for the shields.io badges
+shields_text <- lapply(meta, function(page_meta) {
+  "Accepted"
+})
+yaml::write_yaml(shields_text, "shields.yml")
+
+# create the list of contributions
 htmltools::tags$ul(
   lapply(names(meta), function(name) {
     href <- sprintf("%s.html", name)

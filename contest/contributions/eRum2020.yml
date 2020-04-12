@@ -4,3 +4,5 @@ repository: https://2020.erum.io/
 menu_entry: eRum2020
 type: webpage
 content: https://2020.erum.io/
+# page_name will evetually be constructed by rmdgallery, see https://github.com/riccardoporreca/rmdgallery/issues/15
+page_name: eRum2020
