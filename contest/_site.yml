@@ -26,6 +26,7 @@ navbar:
 gallery:
   meta_dir: contributions
   single_meta: true
+  order_by: [desc(date)]
   type_field: type
   type_template:
     webpage: embed-url
