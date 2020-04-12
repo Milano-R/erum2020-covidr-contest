@@ -1,4 +1,14 @@
 /* ========================================================================== */
+/* Same font and color as the main eRum2020 website */
+/* ---------------------------------------------------------------------------*/
+
+body {
+  font-family: "Roboto", Sans-serif;
+  color: #696969;
+}
+
+
+/* ========================================================================== */
 /* Custom navbar with eRum2020 colors (type: erum2020 in _site.yml) */
 /* ---------------------------------------------------------------------------*/
 
@@ -81,13 +91,6 @@
    and customized with metadata for the galery pages */
 #header {
   display: none;
-}
-
-/* we do not want extra space below the galler-after footer */
-body {
-  font-family: "Roboto", Sans-serif;
-  color: #696969;
-  padding-bottom: 0 !important;
 }
 
 /* Customized style for the before and after elements and their content */
