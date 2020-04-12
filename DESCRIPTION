@@ -1,7 +1,10 @@
 Imports:
   bsplus,
+  gh,
   htmltools,
+  markdown,
   rmarkdown,
-  rmdgallery
+  rmdgallery,
+  yaml
 Remotes:
   riccardoporreca/rmdgallery@develop
