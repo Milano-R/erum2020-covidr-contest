@@ -57,3 +57,20 @@ jobs:
           build_dir: contest/_site
         env:
           GITHUB_TOKEN: ${{ secrets.GHPAGES_DEPLOY_TOKEN }}
+      - name: Create utterances issues with voting comment
+        if: github.ref == 'refs/heads/feature/initial-setup'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GHPAGES_DEPLOY_TOKEN }}
+        run: |
+          source("contest/_tools/utterances-issues.R")
+          comment <- readLines("_tools/vote-comment.md")
+          create_utterances_issues(
+            meta = rmdgallery::gallery_site_config("contest")$gallery$meta,
+            # !!!CHANGE BEFORE MERGING TO MASTER!!!
+            owner = "riccardoporreca",
+            repo = "test-utterances",
+            site = "https://milano-r.github.io/erum2020-covidr-contest",
+            comment = comment, reaction = "+1"
+          )
+        shell: Rscript {0}
+
