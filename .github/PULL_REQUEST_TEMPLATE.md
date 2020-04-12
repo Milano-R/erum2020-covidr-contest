@@ -21,9 +21,5 @@ For CovidR maintainers:
 - [ ] Make sure the email to covidrcontest@erum.io was received
 - [ ] E-mail received
 - [ ] Merge the pull request
-- [ ] Create an initial paceholder comment and a first like
-    ```md
-    Vote for this contribution by giving it a :+1:!
-    _Please avoid using comments or other reactions_
-    ```
+- [ ] The initial comment should be automatically created, otherwise comment manually with the raw content of [vote-comment.md](../tree/master/contest/_tools/vote-comment.md) and an initial like
 - [ ] Provide here the link to the contribution as published to the gallery: https://milano-r.github.io/erum2020-covidr-contest/___.html
