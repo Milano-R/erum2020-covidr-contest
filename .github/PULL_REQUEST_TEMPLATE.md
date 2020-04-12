@@ -16,7 +16,7 @@ For CovidR maintainers:
 - [ ] Label the PR as "submission"
 - [ ] Check the validity of the submission
 - [ ] Assess completeness of metadata and possibly adjust the `.yml` file-name
-- [ ] Rename the `.yml` file by including the date (e.g. `2020-04-01-april-fool.yml`)
+- [ ] Add a field with the current `date` (e.g. `2020-04-01` for April 1st)
 - [ ] Check the integration of the new page in the website gallery (locally or via Actions' artifact)
 - [ ] Make sure the email to covidrcontest@erum.io was received
 - [ ] E-mail received
