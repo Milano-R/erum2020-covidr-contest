@@ -2,7 +2,7 @@
 
   `%>%` <- bsplus::`%>%`
   badge_shield <- sprintf(
-    "https://img.shields.io/badge/dynamic/yaml?label=eRum2020::CovidR&labelColor=2b3990&color=778bc5&query=$.%s&url=https://tinyurl.com/erum2020-covidr/shields.yml",
+    "https://img.shields.io/endpoint?url=https://runkit.io/riccardoporreca/erum2020-covidr-shield/branches/master/%s",
     page_name
   )
   badge_alt <- "eRum2020::CovidR"
