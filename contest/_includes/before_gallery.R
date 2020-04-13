@@ -55,7 +55,9 @@
     ),
     tags$div(
       class = "collapse", id = "utterances",
+      "!!!CHANGE BEFORE MERGING TO MASTER: Test collapsible",
       tags$script(
+        src = "https://utteranc.es/client.js",
         repo = utterances_repo, `issue-term` = "pathname", label = ":+1:",
         theme = "github-light", crossorigin = "anonymous", async = NA
       ),
