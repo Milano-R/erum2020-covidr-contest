@@ -1,5 +1,8 @@
 {{
 
+  # !!!CHANGE BEFORE MERGING TO MASTER!!!
+  utterances_repo <- "Milano-R/erum2020-covidr-contest"
+  utterances_repo <- "riccardoporreca/test-utterances"
   tags <- htmltools::tags
   `%>%` <- bsplus::`%>%`
 
@@ -52,16 +55,10 @@
     ),
     tags$div(
       class = "collapse", id = "utterances",
-      htmltools::HTML(
-        # !!!CHANGE BEFORE MERGING TO MASTER!!!
-        '<script src="https://utteranc.es/client.js"
-          repo="riccardoporreca/test-utterances"
-          issue-term="pathname"
-          label=":+1:"
-          theme="github-light"
-          crossorigin="anonymous" async>
-         </script>
-      '),
+      tags$script(
+        repo = utterances_repo, `issue-term` = "pathname", label = ":+1:",
+        theme = "github-light", crossorigin = "anonymous", async = NA
+      ),
     ),
     tags$hr()
   )
