@@ -30,7 +30,8 @@
       markdown::markdownToHTML(text = badge_md, fragment.only = TRUE)
     )
     bsplus::bs_modal(
-      id = id, title = paste("Include the badge for ", page_name),
+      id = id, footer = NULL,
+      title = paste("Include the badge for ", page_name),
       body = htmltools::tagList(
         tags$p(htmltools::HTML(badge_html)),
         tags$p("Markdown"),
@@ -63,11 +64,11 @@
       ) %>% bsplus::bs_attach_collapse(., "utterances"),
       tags$a(
         href = "#",
-        tags$img(alt = badge_alt, src = badgen, .noWS = "outside")
+        tags$img(alt = badge_alt, src = sprintf("%s&labelColor=2b3990", badgen), .noWS = "outside")
       ) %>% bsplus::bs_attach_modal(., "badge-modal"),
       tags$a(
         href = "#",
-        tags$img(alt = badge_alt, src = badge_shield, .noWS = "outside")
+        tags$img(alt = badge_alt, src = sprintf("%s&labelColor=2b3990", badge_shield), .noWS = "outside")
       ) %>% bsplus::bs_attach_modal(., "shield-modal")
     ),
     tags$div(
