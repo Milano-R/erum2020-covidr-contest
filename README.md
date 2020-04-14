@@ -105,7 +105,7 @@ we will discuss and take care of the remaining details.
 
 ### How to submit
 
-You can submit your contribution **until May 25th** using one of the
+You can submit your contribution **until May 22nd** using one of the
 following methods
 
 1.  **Pull Request**
@@ -116,19 +116,19 @@ following methods
         containing the information above for your contribution.
           - The file-name should somehow identify your contribution, we
             recommend using something like `name-short-title.yml`.
-      - You can preview the integration of your contribution in the
+      - Create a **Pull Request**, making sure you “Allow edits from
+        maintainers”.
+      - Send us an email at <covidrcontest@erum.io> with the link to the
+        Pull Request.
+      - You can also preview the integration of your contribution in the
         [CovidR
         Gallery](https://milano-r.github.io/erum2020-covidr-contest)
         from a local clone of your fork via
           - `remotes::install_deps()`
           - `browseURL(file.path("contest",
             rmarkdown::render_site("contest")))`
-      - Create a **Pull Request**, making sure you “Allow edits from
-        maintainers”.
-      - Send us an email at <covidrcontest@erum.io> with the link to the
-        Pull Request.
 2.  **Create an Issue**
-      - You can open a [**submit the contribution as new
+      - [**Submit the contribution as new
         Issue**](https://github.com/riccardoporreca/test-github-community/issues/new/choose)
         **\!\!\!CHANGE BEFORE MERGING TO MASTER\!\!\!** to provide the
         required information.
@@ -138,12 +138,12 @@ following methods
         Issue.
 
 Your submission will be officially accepted once the corresponding Pull
-Request is reviewed, approved. and merged. Your contribution will then
+Request is reviewed, approved, and merged. Your contribution will then
 appear in the [CovidR
 Gallery](https://milano-r.github.io/erum2020-covidr-contest).
 
 If you have any problems you can also contact us at:
-<covidrcontest@erum.io>
+<covidrcontest@erum.io>.
 
 -----
 

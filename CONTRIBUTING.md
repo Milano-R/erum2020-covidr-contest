@@ -28,22 +28,22 @@ If you are not sure about some of the fields, we encourage you to still open a P
 
 ### How to submit
 
-You can submit your contribution **until May 25th** using one of the following methods
+You can submit your contribution **until May 22nd** using one of the following methods
 
 1. **Pull Request**
     - [**Fork the repository**](https://github.com/Milano-R/erum2020-covidr-contest/fork) and create a **new `.yml` file** under [`contest/contributions`](https://github.com/Milano-R/erum2020-covidr-contest/tree/master/contest/contributions), containing the information above for your contribution.
       - The file-name should somehow identify your contribution, we recommend using something like `name-short-title.yml`.
-    - You can preview the integration of your contribution in the [CovidR Gallery](https://milano-r.github.io/erum2020-covidr-contest) from a local clone of your fork via
-      - `remotes::install_deps()`
-      - `browseURL(file.path("contest", rmarkdown::render_site("contest")))`
     - Create a **Pull Request**, making sure you "Allow edits from maintainers".
     - Send us an email at [covidrcontest@erum.io](mailto:covidrcontest@erum.io) with the link to the Pull Request.
+    - You can also preview the integration of your contribution in the [CovidR Gallery](https://milano-r.github.io/erum2020-covidr-contest) from a local clone of your fork via
+      - `remotes::install_deps()`
+      - `browseURL(file.path("contest", rmarkdown::render_site("contest")))`
 
 2. **Create an Issue**
-    - You can open a [**submit the contribution as new Issue**](https://github.com/riccardoporreca/test-github-community/issues/new/choose) **!!!CHANGE BEFORE MERGING TO MASTER!!!** to provide the required information.
+    - [**Submit the contribution as new Issue**](https://github.com/riccardoporreca/test-github-community/issues/new/choose) **!!!CHANGE BEFORE MERGING TO MASTER!!!** to provide the required information.
     - We will follow up by creating the relevant `.yml` file and corresponding pull request.
     - Send us an email at [covidrcontest@erum.io](mailto:covidrcontest@erum.io) with the link to the Issue.
 
-Your submission will be officially accepted once the corresponding Pull Request is reviewed, approved. and merged. Your contribution will then appear in the [CovidR Gallery](https://milano-r.github.io/erum2020-covidr-contest).
+Your submission will be officially accepted once the corresponding Pull Request is reviewed, approved, and merged. Your contribution will then appear in the [CovidR Gallery](https://milano-r.github.io/erum2020-covidr-contest).
 
-If you have any problems you can also contact us at: [covidrcontest@erum.io](mailto:covidrcontest@erum.io)
+If you have any problems you can also contact us at: [covidrcontest@erum.io](mailto:covidrcontest@erum.io).
