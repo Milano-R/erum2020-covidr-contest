@@ -3,15 +3,20 @@
 Each participant is requested to provide the following information in YAML format, which will allow the contribution to be integrated and visible in the [CovidR Gallery](https://milano-r.github.io/erum2020-covidr-contest)
 
 ``` yaml
-# Contribution's title and author.
+# Contribution's title, author, abstract
 title: An Awesome COVID-19 Contribution
 author: The Author
-# Short name to be used in the website Gallery menu. Can be the same as title.
+abstract: |
+  Provide a short abstract with a brief description of your contribution and its
+  main features (max 800 characters, including spaces). The usage of publicly 
+  available data should be explictly mentioned.
+  The text can be broken across multiple lines, each indented with two spaces.
+# Short name to be used in the website Gallery menu (can be the same as title)
 menu_entry: Short title
 # URL of the public source code repository
 repository: https://github.com/user/repo
-# The type of contribution and how it can be featured as gallery content.
-# Keep only the type and content relevant to your contribution.
+# Type of contribution and how it can be featured as gallery content
+# Keep only the type and content relevant to your contribution
 # For a Shiny app:
 type: shiny
 content: URL of your Shiny app, e.g. https://user.shinyapps.io/my-app

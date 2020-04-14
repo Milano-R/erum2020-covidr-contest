@@ -1,7 +1,16 @@
 title: eRum2020
 author: eRum2020 Organizing Comittee
-repository: https://2020.erum.io/
+abstract: |
+  The European R users meeting (eRum) is a biennial conference that brings the R
+  User Community of Europe together to exchange experiences, broaden knowledge
+  of R and collaborate.
+  eRum is an open event, and it welcomes expert and skillful practitioners as
+  well as people who just want to take a peek on the future of data science.
+  eRum aims to provide a platform for the creation of new collaborations and for
+  sharing experiences.
+  Being a no profit conference, ticket’s price will be kept as low as possibile.
 menu_entry: eRum2020
+repository: https://2020.erum.io/
 type: webpage
 content: https://2020.erum.io/
 date: 2020-03-01
