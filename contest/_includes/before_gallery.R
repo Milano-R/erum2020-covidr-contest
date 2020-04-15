@@ -6,27 +6,25 @@
   tags <- htmltools::tags
   `%>%` <- bsplus::`%>%`
 
-  # dymanic badge via shield.io enpoint https://runkit.com/erum2020-covidr/shield
-  # Consider https://tinyurl.com/erum2020-covidr-shield => https://runkit.io/erum2020-covidr/shield/branches/master
-  badge_shield <- sprintf(
-    "https://img.shields.io/endpoint?url=https://runkit.io/erum2020-covidr/shield/branches/master/%s",
-    page_name
-  )
-  # dymanic badge via badgen.net enpoint https://runkit.com/erum2020-covidr/badge
-  # Consider https://tinyurl.com/erum2020-covidr-badge => https://runkit.io/erum2020-covidr/madge/branches/master
-  badgen <- sprintf(
+  # dynamic badge via shield.io enpoint https://runkit.com/erum2020-covidr/shield
+  # https://img.shields.io/endpoint?url=https://runkit.io/erum2020-covidr/shield/branches/master/<page>
+  # => slow and often unresponsive
+  # dynamic badge via badgen.net enpoint https://runkit.com/erum2020-covidr/badge
+  # https://runkit.io/erum2020-covidr/madge/branches/master/<page>?cache=300
+  # => we need to reduce the cache to 300s (the minimum), as it defaults to 24h)
+  badge_url <- sprintf(
     "https://badgen.net/https/runkit.io/erum2020-covidr/badge/branches/master/%s?cache=300",
     page_name
   )
   badge_alt <- "eRum2020::CovidR"
-  badge_modal <- function(id, badge) {
+  badge_modal <- function(id, url) {
     page_url <- sprintf(
       "https://milano-r.github.io/erum2020-covidr-contest/%s.html",
       page_name
     )
-    badge_md <- sprintf("[![%s](%s)](%s)", badge_alt, badge, page_url)
+    badge_md <- sprintf("[![%s](%s)](%s)", badge_alt, url, page_url)
     badge_html <- gsub(
-      "</?p>", "",
+      "</?p>", "", # the code is wrapped inside <p></p> by markdownToHTML
       markdown::markdownToHTML(text = badge_md, fragment.only = TRUE)
     )
     bsplus::bs_modal(
@@ -71,12 +69,9 @@
       ) %>% bsplus::bs_attach_modal(., "utterances"),
       tags$a(
         href = "#",
-        tags$img(alt = badge_alt, src = sprintf("%s&labelColor=2b3990", badgen), .noWS = "outside")
+        # use eRum2020 color for the label just on the gallery page
+        tags$img(alt = badge_alt, src = sprintf("%s&labelColor=2b3990", badge_url), .noWS = "outside")
       ) %>% bsplus::bs_attach_modal(., "badge-modal"),
-      tags$a(
-        href = "#",
-        tags$img(alt = badge_alt, src = sprintf("%s&labelColor=2b3990", badge_shield), .noWS = "outside")
-      ) %>% bsplus::bs_attach_modal(., "shield-modal")
     ),
     bsplus::bs_modal(
       id = "abstract", footer = NULL,
@@ -98,8 +93,7 @@
         ),
       )
     ),
-    badge_modal(id = "shield-modal", badge_shield),
-    badge_modal(id = "badge-modal", badgen),
+    badge_modal(id = "badge-modal", badge_url),
     tags$hr()
   )
 

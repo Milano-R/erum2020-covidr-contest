@@ -19,7 +19,7 @@ meta <- rmdgallery::gallery_site_config()$gallery$meta
 shields_text <- lapply(meta, function(page_meta) {
   "Accepted"
 })
-yaml::write_yaml(shields_text, "shields.yml")
+yaml::write_yaml(shields_text, "badge-endpoint.yml")
 
 # create the list of contributions
 `%>%` <- bsplus::`%>%`
