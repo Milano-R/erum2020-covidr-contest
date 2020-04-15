@@ -29,7 +29,7 @@ be invited to present at the main e-Rum2020 conference (June 17th-20th).
   - Each participant will get a CovidR badge to include in their
     repository.
   - We will share contributions on our social media.
-  - Selected contributions will be invited to present at the eRum2020
+  - Selected contributions will be invited to present at the e-Rum2020
     pre-conference event on May 29th.
   - Winner(s) will be awarded with e-prizes.
   - The ultimate contest winner will be invited to present at

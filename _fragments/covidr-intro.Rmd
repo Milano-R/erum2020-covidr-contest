@@ -16,7 +16,7 @@ Contributions can be submitted **until May 22nd**, and the online e-Rum2020 pre-
 - All contributions will be featured in the [CovidR Gallery](https://milano-r.github.io/erum2020-covidr-contest) website, allowing the community to browse through, vote for your contribution, and provide feedback.
 - Each participant will get a CovidR badge to include in their repository.
 - We will share contributions on our social media.
-- Selected contributions will be invited to present at the eRum2020 pre-conference event on May 29th.
+- Selected contributions will be invited to present at the e-Rum2020 pre-conference event on May 29th.
 - Winner(s) will be awarded with e-prizes.
 - The ultimate contest winner will be invited to present at [e-Rum2020](https://2020.erum.io/).
 
