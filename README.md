@@ -134,9 +134,8 @@ following methods
             rmarkdown::render_site("contest")))`
 2.  **Create an Issue**
       - [**Submit the contribution as new
-        Issue**](https://github.com/riccardoporreca/test-github-community/issues/new/choose)
-        **\!\!\!CHANGE BEFORE MERGING TO MASTER\!\!\!** to provide the
-        required information.
+        Issue**](https://github.com/Milano-R/erum2020-covidr-contest/issues/new/choose)
+        to provide the required information.
       - We will follow up by creating the relevant `.yml` file and
         corresponding pull request.
       - Send us an email at <covidrcontest@erum.io> with the link to the

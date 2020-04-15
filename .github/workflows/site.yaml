@@ -53,7 +53,7 @@ jobs:
           path: contest/_site
 
       - name: Deploy to GitHub Pages
-        if: github.ref == 'refs/heads/feature/initial-setup'
+        if: github.ref == 'refs/heads/master'
         uses: crazy-max/ghaction-github-pages@v1.3.0
         with:
           target_branch: gh-pages
@@ -61,21 +61,17 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Create utterances issues with voting comment
-        if: github.ref == 'refs/heads/feature/initial-setup'
+        if: github.ref == 'refs/heads/master'
         env:
-          # !!!CHANGE BEFORE MERGING TO MASTER!!!
-          GITHUB_TOKEN: ${{ secrets.GHPAGES_DEPLOY_TOKEN }}
-          # GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           source("contest/_tools/utterances-issues.R")
           comment <- readLines("contest/_tools/vote-comment.md")
           create_utterances_issues(
             meta = rmdgallery::gallery_site_config("contest")$gallery$meta,
-            # !!!CHANGE BEFORE MERGING TO MASTER!!!
-            owner = "riccardoporreca",
-            repo = "test-utterances",
+            owner = "Milano-R",
+            repo = "erum2020-covidr-contest",
             site = "https://milano-r.github.io/erum2020-covidr-contest",
             comment = comment, reaction = "+1"
           )
         shell: Rscript {0}
-

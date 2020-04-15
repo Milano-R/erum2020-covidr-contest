@@ -1,8 +1,6 @@
 {{
 
-  # !!!CHANGE BEFORE MERGING TO MASTER!!!
   utterances_repo <- "Milano-R/erum2020-covidr-contest"
-  utterances_repo <- "riccardoporreca/test-utterances"
   tags <- htmltools::tags
   `%>%` <- bsplus::`%>%`
 
