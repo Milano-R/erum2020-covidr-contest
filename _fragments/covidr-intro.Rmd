@@ -4,7 +4,7 @@ output: html_fragment
 
 **CovidR** is an [e-Rum2020](https://2020.erum.io/) **pre-conference event** featuring a contest of R contributions around the topic of the [COVID-19 pandemic](https://www.who.int/emergencies/diseases/novel-coronavirus-2019).
 
-Contributions can be submitted **until May 22nd**, and the online e-Rum2020 pre-conference event will be held on **May 29th**. Selected contributors will be invited to present their work to the community at the event, when the CovidR contest winner(s) will be announced and will receive their e-prizes. Finally, The best contribution will also be invited to present at the main e-Rum2020 conference (June 17-20).
+Contributions can be submitted **until May 22nd**, and the online e-Rum2020 pre-conference event will be held on **May 29th**. Selected contributors will be invited to present their work to the community at the event, where the CovidR contest winner(s) will be announced and will receive their e-prizes. Finally, the best overall contribution will also be invited to present at the main e-Rum2020 conference (June 17th-20th).
 
 **How to participate to CovidR**
 
@@ -13,10 +13,10 @@ Contributions can be submitted **until May 22nd**, and the online e-Rum2020 pre-
 
 **What you will get** by participating to CovidR
 
-- All contribution will be featured in the [CovidR Gallery](https://milano-r.github.io/erum2020-covidr-contest) website, allowing the community to browse through and provide feedback.
+- All contributions will be featured in the [CovidR Gallery](https://milano-r.github.io/erum2020-covidr-contest) website, allowing the community to browse through, vote for your contribution, and provide feedback.
 - Each participant will get a CovidR badge to include in their repository.
 - We will share contributions on our social media.
-- Selected contributions will be presented at the eRum2020 pre-conference event on May 29th.
+- Selected contributions will be invited to present at the e-Rum2020 pre-conference event on May 29th.
 - Winner(s) will be awarded with e-prizes.
 - The ultimate contest winner will be invited to present at [e-Rum2020](https://2020.erum.io/).
 
