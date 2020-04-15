@@ -22,7 +22,7 @@ be invited to present at the main e-Rum2020 conference (June 17th-20th).
 
 **What you will get** by participating to CovidR
 
-  - All contribution will be featured in the [CovidR
+  - All contributions will be featured in the [CovidR
     Gallery](https://milano-r.github.io/erum2020-covidr-contest)
     website, allowing the community to browse through, vote for your
     contribution, and provide feedback.
