@@ -1,3 +1,4 @@
+
 /* ========================================================================== */
 /* Same font and color as the main eRum2020 website */
 /* ---------------------------------------------------------------------------*/
@@ -80,6 +81,32 @@ body {
 .btn-badge:hover {
   color: #0c154d;
   background-color: #778bc5;
+}
+
+/* collapsible contributions list */
+.btn.collapsed > .fa.fa-minus::before {
+    content: "\f067";
+}
+#contributions > .panel .btn-badge {
+  position: absolute;
+  left: 8px;
+}
+#contributions > .panel {
+  margin-bottom: 0;
+  border-bottom: 1px solid #eee;
+  border-radius: 0;
+  padding: 6px 12px;
+  padding-left: 36px;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  position: relative;
+}
+#contributions > .panel:first-of-type {
+  border-top: 1px solid #eee;
+}
+#contributions .details > div {
+  margin-top: 6px;
 }
 
 

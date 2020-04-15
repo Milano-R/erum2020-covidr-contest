@@ -41,27 +41,34 @@
       )
     )
   }
+  badge_button <- function(..., class = character(0)) {
+    htmltools::tag(
+      "button", list(
+        class = c("btn btn-badge", class),
+        ...
+      )
+    )
+  }
 
   htmltools::tagList(
+    # style fine-tunining specific to gallery pages
     tags$script(src = "assets/main.js"),
     tags$div(
       class = "row",
       tags$h3(title, style = htmltools::css(display = "inline")),
-      tags$em("by", author),
+      "by", tags$em(author),
       tags$sup(
         "[", tags$a("repository", href = repository, target = "_blank", .noWS = "outside"), "]"
       )
     ),
-    badge_modal(id = "shield-modal", badge_shield),
-    badge_modal(id = "badge-modal", badgen),
     tags$div(
       class = "row badges",
-      htmltools::tag(
-        "button", list(
-          class = "btn btn-badge",
-          tags$span(class = "fa fa-thumbs-up"), "Like this contribution!"
-        )
-      ) %>% bsplus::bs_attach_collapse(., "utterances"),
+      badge_button(
+        "Abstract"
+      ) %>% bsplus::bs_attach_modal(., "abstract"),
+      badge_button(
+        tags$span(class = "fa fa-thumbs-up"), "Like this contribution!"
+      ) %>% bsplus::bs_attach_modal(., "utterances"),
       tags$a(
         href = "#",
         tags$img(alt = badge_alt, src = sprintf("%s&labelColor=2b3990", badgen), .noWS = "outside")
@@ -71,15 +78,28 @@
         tags$img(alt = badge_alt, src = sprintf("%s&labelColor=2b3990", badge_shield), .noWS = "outside")
       ) %>% bsplus::bs_attach_modal(., "shield-modal")
     ),
-    tags$div(
-      class = "collapse", id = "utterances",
-      "!!!CHANGE BEFORE MERGING TO MASTER: Test collapsible",
-      tags$script(
-        src = "https://utteranc.es/client.js",
-        repo = utterances_repo, `issue-term` = "pathname", label = ":+1:",
-        theme = "github-light", crossorigin = "anonymous", async = NA
-      ),
+    bsplus::bs_modal(
+      id = "abstract", footer = NULL,
+      title = title,
+      body = htmltools::tagList(
+        tags$p(tags$em(author)),
+        tags$p(abstract)
+      )
     ),
+    bsplus::bs_modal(
+      id = "utterances", footer = NULL,
+      title = sprintf('Vote for "%s"', title),
+      body =  htmltools::tagList(
+        "!!!CHANGE BEFORE MERGING TO MASTER: Test",
+        tags$script(
+          src = "https://utteranc.es/client.js",
+          repo = utterances_repo, `issue-term` = "pathname", label = ":+1:",
+          theme = "github-light", crossorigin = "anonymous", async = NA
+        ),
+      )
+    ),
+    badge_modal(id = "shield-modal", badge_shield),
+    badge_modal(id = "badge-modal", badgen),
     tags$hr()
   )
 
