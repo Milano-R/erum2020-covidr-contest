@@ -85,7 +85,11 @@
       id = "utterances", footer = NULL,
       title = sprintf('Vote for "%s"', title),
       body =  htmltools::tagList(
-        "!!!CHANGE BEFORE MERGING TO MASTER: Test",
+        tags$p(
+          "Like this contribution to see it presented and awarded at the e-Rum2020",
+          tags$a(href = "about.html", "CovidR contest"),
+          "pre-conference event"
+        ),
         tags$script(
           src = "https://utteranc.es/client.js",
           repo = utterances_repo, `issue-term` = "pathname", label = ":+1:",
