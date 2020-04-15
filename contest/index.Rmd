@@ -10,7 +10,7 @@ site: rmdgallery::gallery_site
 
 The pre-conference event will take place on **May 29th**, when selected participants will be invited to present their work and the contest winners will be announced and awarded with e-prizes. Contributions can be **[submitted](submit.html) until May 22nd** and are made available in this website, where the wider community is invited to provide feedback. The winners will be announced on **June 15th**.
 
-The current submissions feature the following contributions:
+The current submissions feature the following contributions.
 
 ```{r, echo=FALSE}
 meta <- rmdgallery::gallery_site_config()$gallery$meta
@@ -22,19 +22,47 @@ shields_text <- lapply(meta, function(page_meta) {
 yaml::write_yaml(shields_text, "shields.yml")
 
 # create the list of contributions
-htmltools::tags$ul(
+`%>%` <- bsplus::`%>%`
+tags <- htmltools::tags
+tags$div(
+  id = "contributions", 
   lapply(names(meta), function(name) {
+    details_id <- sprintf("details-%s", name)
     href <- sprintf("%s.html", name)
     one_meta <- meta[[name]]
-    htmltools::tags$li(
-      '"', htmltools::a(
-        href = href, one_meta$title, .noWS = "outside"
-      ), '"',
-      "by", one_meta$author,
-      "[", htmltools::a(
-        "repository", href = one_meta$repository, target = "_blank", .noWS = "outside"
-      ), "]"
+    tags$div(
+      class = "panel",
+      htmltools::tag(
+        "button", list(
+          class = "btn btn-badge collapsed",
+          tags$span(class = "fa fa-minus"),
+          `data-parent` = "#contributions"
+        )
+      ) %>% bsplus::bs_attach_collapse(., details_id),
+      tags$a(
+        href = href, one_meta$title
+      ),
+      "by", tags$em(one_meta$author),
+      tags$div(
+        class = "details collapse", id = details_id,
+        tags$div(
+          class = "abstract",
+          tags$em("Abstract"), htmltools::HTML("&mdash;"), 
+          one_meta$abstract
+        ),
+        tags$div(
+          class = "repo",
+          tags$em("Repository"), htmltools::HTML("&mdash;"), 
+          tags$a(
+            one_meta$repository, href = one_meta$repository, target = "_blank"
+          )
+        ),
+      )
+      
     )
   })
 )
+
 ```
+
+
