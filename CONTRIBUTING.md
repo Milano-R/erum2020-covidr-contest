@@ -8,22 +8,22 @@ title: An Awesome COVID-19 Contribution
 author: The Author
 abstract: |
   Provide a short abstract with a brief description of your contribution and its
-  main features (max 800 characters, including spaces). The usage of publicly 
+  main features (max 800 characters, including spaces). The usage of publicly
   available data should be explictly mentioned.
   The text can be broken across multiple lines, each indented with two spaces.
-  
+
 # Short name to be used in the website Gallery menu (can be the same as title)
 menu_entry: Short title
 # URL of the public source code repository
 repository: https://github.com/user/repo
 # Type of contribution and how it can be featured as gallery content
 # Keep only the type and content relevant to your contribution
-# For a Shiny app:
+# For a Shiny app, provide its URL:
 type: shiny
-content: URL of your Shiny app, e.g. https://user.shinyapps.io/my-app
+content: https://user.shinyapps.io/my-app # e.g. my-app on shinyapps.io
 # For a general online-published resource (e.g. a website / report):
 type: webpage
-content: URL of the webpage, e.g. https://user.github.io/my-analysis
+content: https://user.github.io/my-analysis # URL of the webpage
 # For more complex / heterogeneous contributions, you can create a GitHub
 # Gist (https://gist.github.com/) with the relevant information and pointers:
 type: gist
@@ -37,7 +37,8 @@ If you are not sure about some of the fields, we encourage you to still open a P
 You can submit your contribution **until May 22nd** using one of the following methods
 
 1. **Pull Request**
-    - [**Fork the repository**](https://github.com/Milano-R/erum2020-covidr-contest/fork) and create a **new `.yml` file** under [`contest/contributions`](https://github.com/Milano-R/erum2020-covidr-contest/tree/master/contest/contributions), containing the information above for your contribution.
+    - [**Fork the repository**](https://github.com/Milano-R/erum2020-covidr-contest/fork)
+      - Create a **new `.yml` file** under [`contest/contributions`](https://github.com/Milano-R/erum2020-covidr-contest/tree/master/contest/contributions), containing the information above for your contribution. The example above is available as [`.example.yml`](https://github.com/Milano-R/erum2020-covidr-contest/tree/master/contest/contributions/.example.yml) and can be used as a starting point.
       - The file-name should somehow identify your contribution, we recommend using something like `name-short-title.yml`.
     - Create a **Pull Request**, making sure you "Allow edits from maintainers".
     - Send us an email at [covidrcontest@erum.io](mailto:covidrcontest@erum.io) with the link to the Pull Request.

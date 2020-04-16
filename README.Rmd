@@ -28,20 +28,26 @@ submit_link <- "#submit-a-contribution"
 ## Submit a contribution
 
 ```{r, echo = FALSE, results = 'asis', warning = FALSE}
-# updated the same yaml chunk in the issyue template
-contributing <- readLines("CONTRIBUTING.md")
+# updated the example yaml chunk in the issue template and CONTRIBUTING
+example_yaml <- readLines("contest/contributions/.example.yml")
+contributing <- "CONTRIBUTING.md"
 issue_tpl <- ".github/ISSUE_TEMPLATE/submit-a-contribution.md"
-.yaml_range <- function(x) c(head(grep("^```\\s*yaml", x), 1L), head(grep("^```$", x), 1L))
-tpl <- readLines(issue_tpl)
-tpl_yaml <- .yaml_range(tpl)
-contr_yaml <- .yaml_range(contributing)
-tpl <- c(
-  head(tpl, tpl_yaml[1] - 1),
-  contributing[seq(contr_yaml[1], contr_yaml[2])],
-  tail(tpl, -tpl_yaml[2])
-)
-writeLines(tpl, issue_tpl)
-cat(knitr::knit(quiet = TRUE, text = contributing[-1]))
+.replace_yaml <- function(file) {
+  txt <- readLines(file)
+  txt_yaml <- c(
+    head(grep("^```\\s*yaml", txt), 1L) + 1L, 
+    head(grep("^```$", txt), 1L) - 1L
+  )
+  txt <- c(
+    head(txt, txt_yaml[1] - 1),
+    example_yaml,
+    tail(txt, -txt_yaml[2])
+  )
+  writeLines(txt, file)
+}
+.replace_yaml(contributing)
+.replace_yaml(issue_tpl)
+cat(knitr::knit(quiet = TRUE, text = readLines(contributing)[-1L]))
 ```
 
 

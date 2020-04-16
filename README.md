@@ -83,22 +83,22 @@ title: An Awesome COVID-19 Contribution
 author: The Author
 abstract: |
   Provide a short abstract with a brief description of your contribution and its
-  main features (max 800 characters, including spaces). The usage of publicly 
+  main features (max 800 characters, including spaces). The usage of publicly
   available data should be explictly mentioned.
   The text can be broken across multiple lines, each indented with two spaces.
-  
+
 # Short name to be used in the website Gallery menu (can be the same as title)
 menu_entry: Short title
 # URL of the public source code repository
 repository: https://github.com/user/repo
 # Type of contribution and how it can be featured as gallery content
 # Keep only the type and content relevant to your contribution
-# For a Shiny app:
+# For a Shiny app, provide its URL:
 type: shiny
-content: URL of your Shiny app, e.g. https://user.shinyapps.io/my-app
+content: https://user.shinyapps.io/my-app # e.g. my-app on shinyapps.io
 # For a general online-published resource (e.g. a website / report):
 type: webpage
-content: URL of the webpage, e.g. https://user.github.io/my-analysis
+content: https://user.github.io/my-analysis # URL of the webpage
 # For more complex / heterogeneous contributions, you can create a GitHub
 # Gist (https://gist.github.com/) with the relevant information and pointers:
 type: gist
