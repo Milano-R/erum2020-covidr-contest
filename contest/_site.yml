@@ -31,6 +31,9 @@ gallery:
   type_field: type
   type_template:
     webpage: embed-url
+    shiny: embed-url
+    gist: embed-html
+    embed: embed-html
   navbar:
     left:
       - text: "Gallery"
