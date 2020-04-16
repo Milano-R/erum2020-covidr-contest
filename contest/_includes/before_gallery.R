@@ -9,7 +9,7 @@
   # => slow and often unresponsive
   # dynamic badge via badgen.net enpoint https://runkit.com/erum2020-covidr/badge
   # https://runkit.io/erum2020-covidr/madge/branches/master/<page>?cache=300
-  # => we need to reduce the cache to 300s (the minimum), as it defaults to 24h)
+  # => we need to reduce the cache to 300s (the minimum), as it defaults to 24h
   badge_url <- sprintf(
     "https://badgen.net/https/runkit.io/erum2020-covidr/badge/branches/master/%s?cache=300",
     page_name
