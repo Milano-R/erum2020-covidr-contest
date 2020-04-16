@@ -37,9 +37,9 @@ If you are not sure about some of the fields, we encourage you to still open a P
 You can submit your contribution **until May 22nd** using one of the following methods
 
 1. **Pull Request**
-    - [**Fork the repository**](https://github.com/Milano-R/erum2020-covidr-contest/fork)
-      - Create a **new `.yml` file** under [`contest/contributions`](https://github.com/Milano-R/erum2020-covidr-contest/tree/master/contest/contributions), containing the information above for your contribution. The example above is available as [`.example.yml`](https://github.com/Milano-R/erum2020-covidr-contest/tree/master/contest/contributions/.example.yml) and can be used as a starting point.
-      - The file-name should somehow identify your contribution, we recommend using something like `name-short-title.yml`.
+    - [**Fork the repository**](https://github.com/Milano-R/erum2020-covidr-contest/fork) and create a **new `.yml` file** under [`contest/contributions`](https://github.com/Milano-R/erum2020-covidr-contest/tree/master/contest/contributions), containing the information above for your contribution.
+        - The example above is available as [`.example.yml`](https://github.com/Milano-R/erum2020-covidr-contest/tree/master/contest/contributions/.example.yml) and can be used as a starting point.
+        - The file-name should somehow identify your contribution, we recommend using something like `name-short-title.yml`.
     - Create a **Pull Request**, making sure you "Allow edits from maintainers".
     - Send us an email at [covidrcontest@erum.io](mailto:covidrcontest@erum.io) with the link to the Pull Request.
     - You can also preview the integration of your contribution in the [CovidR Gallery](https://milano-r.github.io/erum2020-covidr-contest) from a local clone of your fork via

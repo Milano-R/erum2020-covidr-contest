@@ -120,6 +120,9 @@ following methods
         and create a **new `.yml` file** under
         [`contest/contributions`](https://github.com/Milano-R/erum2020-covidr-contest/tree/master/contest/contributions),
         containing the information above for your contribution.
+          - The example above is available as
+            [`.example.yml`](https://github.com/Milano-R/erum2020-covidr-contest/tree/master/contest/contributions/.example.yml)
+            and can be used as a starting point.
           - The file-name should somehow identify your contribution, we
             recommend using something like `name-short-title.yml`.
       - Create a **Pull Request**, making sure you “Allow edits from
