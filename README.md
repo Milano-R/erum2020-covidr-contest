@@ -73,7 +73,7 @@ discussing how you can submit your contribution.
 ## Submit a contribution
 
 Each participant is requested to provide the following information in
-YAML format, which will allow the contribution to be integrated and
+YAML format, which will allow the contribution to be integrated and be
 visible in the [CovidR
 Gallery](https://milano-r.github.io/erum2020-covidr-contest)
 
