@@ -4,7 +4,7 @@ Thanks for contributing your submission to the eRum2020 CovidR contest.
 
 - [ ] The title of this PR reflects your contribution
 - [ ] The pull request only includes one new `.yml` file under `contest/contributions`
-- [ ] Make sure "Enable edits from maintainers" is checked
+- [ ] Make sure "Allow edits from maintainers" is checked
 - [ ] Send an email to covidrcontest@erum.io (for further direct communication down the road)
      - Subject: "Submission to CovidR: PR #00", where #00 is the number of this Pull Request
      - Content: A full link to this Pull Request
