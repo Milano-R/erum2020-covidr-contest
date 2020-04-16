@@ -68,7 +68,7 @@ create_utterances_issues <- function(meta, owner, repo,
   }
 
   existing_titles <- vapply(
-    gh("issues"), FUN.VALUE = "",
+    gh("issues", state = "all"), FUN.VALUE = "",
     `[[`, "title"
   )
 
