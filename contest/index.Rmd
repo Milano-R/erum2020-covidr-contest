@@ -1,0 +1,68 @@
+---
+title: "eRum2020 CovidR Contest"
+site: rmdgallery::gallery_site
+---
+
+<h1>Welcome to the CovidR Contest!</h1>
+
+
+[**eRum2020::CovidR**](about.html) is an open-source contest and pre-conference event launched by the 2020 European R Users Meeting ([**eRum2020**](https://2020.erum.io/)), featuring any work done with R around the topic of the [**COVID-19 pandemic**](https://www.who.int/emergencies/diseases/novel-coronavirus-2019).
+
+The pre-conference event will take place on **May 29th**, when selected participants will be invited to present their work and the contest winners will be announced and awarded with e-prizes. Contributions can be **[submitted](submit.html) until May 22nd** and are made available in this website, where the wider community is invited to provide feedback. The winner(s) will be announced during the conference pre-event on **May 29th**.
+
+The current submissions feature the following contributions.
+
+```{r, echo=FALSE}
+meta <- rmdgallery::gallery_site_config()$gallery$meta
+
+# create shields.yml with the dynamic label for the eRum2020::CovidR badges
+shields_text <- lapply(meta, function(page_meta) {
+  "Accepted"
+})
+yaml::write_yaml(shields_text, "badge-endpoint.yml")
+
+# create the list of contributions
+`%>%` <- bsplus::`%>%`
+tags <- htmltools::tags
+tags$div(
+  id = "contributions", 
+  lapply(names(meta), function(name) {
+    details_id <- sprintf("details-%s", name)
+    href <- sprintf("%s.html", name)
+    one_meta <- meta[[name]]
+    tags$div(
+      class = "panel",
+      htmltools::tag(
+        "button", list(
+          class = "btn btn-badge collapsed",
+          tags$span(class = "fa fa-minus"),
+          `data-parent` = "#contributions"
+        )
+      ) %>% bsplus::bs_attach_collapse(., details_id),
+      tags$a(
+        href = href, one_meta$title
+      ),
+      "by", tags$em(one_meta$author),
+      tags$div(
+        class = "details collapse", id = details_id,
+        tags$div(
+          class = "abstract",
+          tags$em("Abstract"), htmltools::HTML("&mdash;"), 
+          one_meta$abstract
+        ),
+        tags$div(
+          class = "repo",
+          tags$em("Repository"), htmltools::HTML("&mdash;"), 
+          tags$a(
+            one_meta$repository, href = one_meta$repository, target = "_blank"
+          )
+        ),
+      )
+      
+    )
+  })
+)
+
+```
+
+

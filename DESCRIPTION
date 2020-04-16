@@ -1,0 +1,10 @@
+Imports:
+  bsplus,
+  gh,
+  htmltools,
+  markdown,
+  rmarkdown,
+  rmdgallery,
+  yaml
+Remotes:
+  riccardoporreca/rmdgallery@v0.3.0

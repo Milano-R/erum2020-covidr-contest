@@ -1,0 +1,39 @@
+name: "erum2020-covidr-contest"
+output:
+  html_document:
+    css: assets/styles.css
+    highlight: kate
+    includes:
+      in_header: "_includes/favicon.html"
+navbar:
+  title: eRum2020::CovidR
+  type: erum2020
+  left:
+    - text: ""
+      icon: fa-home
+      href: index.html
+    - text: "About"
+      icon: fa-info
+      href: about.html
+    - text: "Submit"
+      icon: fa-arrow-circle-up
+      href: submit.html
+  right:
+    - text: "eRum2020"
+      href: https://2020.erum.io/
+    - text: "GitHub"
+      icon: fa-github
+      href: https://github.com/Milano-R/erum2020-covidr-contest
+gallery:
+  meta_dir: contributions
+  single_meta: true
+  order_by: [desc(date)]
+  type_field: type
+  type_template:
+    webpage: embed-url
+  navbar:
+    left:
+      - text: "Gallery"
+        icon: fa-folder-open
+  include_before: _includes/before_gallery.R
+  include_after: _includes/after_gallery.html

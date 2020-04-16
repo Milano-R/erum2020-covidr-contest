@@ -1,0 +1,17 @@
+#!/bin/bash
+if [[ README.Rmd -nt README.md ]]; then
+  echo "README.md is out of date; please re-knit README.Rmd"
+  exit 1
+fi
+if [[ _fragments/covidr-intro.Rmd -nt README.md ]]; then
+  echo "covidr-intro.Rmd is out of date; please re-knit README.Rmd"
+  exit 1
+fi
+if [[ CONTRIBUTING.md -nt README.md ]]; then
+  echo "CONTRIBUTING.md is out of date; please re-knit README.Rmd"
+  exit 1
+fi
+if [[ CODE_OF_CONDUCT.md -nt README.md ]]; then
+  echo "CODE_OF_CONDUCT.md is out of date; please re-knit README.Rmd"
+  exit 1
+fi

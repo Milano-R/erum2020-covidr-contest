@@ -1,0 +1,41 @@
+---
+output: html_fragment
+---
+
+**CovidR** is an [e-Rum2020](https://2020.erum.io/) **pre-conference event** featuring a contest of R contributions around the topic of the [COVID-19 pandemic](https://www.who.int/emergencies/diseases/novel-coronavirus-2019).
+
+Contributions can be submitted **until May 22nd**, and the online e-Rum2020 pre-conference event will be held on **May 29th**. Selected contributors will be invited to present their work to the community at the event, where the CovidR contest winner(s) will be announced and will receive their e-prizes. Finally, the best overall contribution will also be invited to present at the main e-Rum2020 conference (June 17th-20th).
+
+**How to participate to CovidR**
+
+- Provide us with your contribution by May 22nd using the GitHub repository, following the instructions in the ['Submit'](`r submit_link`) section.
+- A GitHub account is needed in order to submit a contribution.
+
+**What you will get** by participating to CovidR
+
+- All contributions will be featured in the [CovidR Gallery](https://milano-r.github.io/erum2020-covidr-contest) website, allowing the community to browse through and vote for your contribution.
+- Each participant will get a CovidR badge to include in their repository.
+- We will share contributions on our social media.
+- Selected contributions will be presented at the e-Rum2020 pre-conference event on May 29th.
+- Winner(s) will be awarded with e-prizes.
+- The ultimate contest winner will be invited to present at [e-Rum2020](https://2020.erum.io/).
+
+**How to win**
+
+An internal jury will pick the winner(s) by evaluating:
+
+- technical quality of the work;
+- popularity of the work among the community - based on thumbs up in the CovidR Gallery.
+
+The winner(s) will be announced during the pre-conference event on May 29th.
+
+**Participation rules**
+
+- Any work or analysis must be performed starting from official data (governmental, institutional, national or international), providing complete reference to sources.
+- Data used can directly refer to the SARS-CoV-2 outbreak (official number of cases, tests performed, viral genome sequences, ...) or to different metrics that can affect the course of the infection if put in the context of the outbreak (demography, population density, census, geographic distributions, movements, ...).
+- Work can refer to a single specific country, a group of countries or the whole globe.
+- Work or analyses must wholly or at least for a relevant part rely on R-based analytics. 
+- Data and source code must be open sourced and available through an open repository.
+- Work can be of any kind, from original data analyses, models, to interactive dashboards or infographics. 
+
+If you have general questions you can always contact us at [covidrcontest@erum.io](mailto:covidrcontest@erum.io), otherwise we recommend using the [Issue / Pull Request submission mechanism](`r submit_link`) as a channel for discussing how you can submit your contribution.

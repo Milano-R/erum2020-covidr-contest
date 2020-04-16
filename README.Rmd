@@ -1,0 +1,55 @@
+---
+output: github_document
+################################################################################
+# NOTE:
+# Make sure you have added an executable pre-commit hook in your local checkout 
+#   .git/hooks/pre-commit
+# to prevent accidental commits of README.Rmd not re-knitted to README.md.
+# If not, you can copy the hook from inst/tools
+#   $ cp _tools/pre-commit .git/hooks
+################################################################################
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+submit_link <- "#submit-a-contribution"
+```
+
+# eRum2020 CovidR Contest
+
+```{r child='_fragments/covidr-intro.Rmd'}
+```
+
+## Submit a contribution
+
+```{r, echo = FALSE, results = 'asis', warning = FALSE}
+# updated the same yaml chunk in the issyue template
+contributing <- readLines("CONTRIBUTING.md")
+issue_tpl <- ".github/ISSUE_TEMPLATE/submit-a-contribution.md"
+.yaml_range <- function(x) c(head(grep("^```\\s*yaml", x), 1L), head(grep("^```$", x), 1L))
+tpl <- readLines(issue_tpl)
+tpl_yaml <- .yaml_range(tpl)
+contr_yaml <- .yaml_range(contributing)
+tpl <- c(
+  head(tpl, tpl_yaml[1] - 1),
+  contributing[seq(contr_yaml[1], contr_yaml[2])],
+  tail(tpl, -tpl_yaml[2])
+)
+writeLines(tpl, issue_tpl)
+cat(knitr::knit(quiet = TRUE, text = contributing[-1]))
+```
+
+
+--- 
+
+## Code of Conduct
+
+```{r, echo = FALSE, results = 'asis', warning = FALSE}
+cat(knitr::knit(quiet = TRUE, text = readLines("CODE_OF_CONDUCT.md")[-1]))
+```
+

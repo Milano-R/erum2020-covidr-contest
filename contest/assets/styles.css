@@ -1,0 +1,142 @@
+
+/* ========================================================================== */
+/* Same font and color as the main eRum2020 website */
+/* ---------------------------------------------------------------------------*/
+
+body {
+  font-family: "Roboto", Sans-serif;
+  color: #696969;
+}
+
+
+/* ========================================================================== */
+/* Custom navbar with eRum2020 colors (type: erum2020 in _site.yml) */
+/* ---------------------------------------------------------------------------*/
+
+/* navbar background */
+.navbar-erum2020 {
+  background-color: #2b3990;
+  border-color: #0c154d;
+}
+/* brand */
+.navbar-erum2020 .navbar-brand {
+  color: #fff;
+}
+.navbar-erum2020 .navbar-brand:focus,
+.navbar-erum2020 .navbar-brand:hover {
+ color: #ec7623;
+ background-color: #0c154d;
+}
+/* top-level and drop-down entries */
+.navbar-erum2020 .navbar-nav > li > a,
+.navbar-erum2020 .navbar-nav .dropdown-menu > li > a {
+  color: #fff;
+  background-color: inherit;
+}
+.navbar-erum2020 .navbar-nav > li > a:focus,
+.navbar-erum2020 .navbar-nav > li > a:hover,
+.navbar-erum2020 .navbar-nav .dropdown-menu > li > a:focus,
+.navbar-erum2020 .navbar-nav .dropdown-menu > li > a:hover {
+  color: #ec7623;
+  background-color: #0c154d;
+}
+.navbar-erum2020 .navbar-nav > .active > a,
+.navbar-erum2020 .navbar-nav > .active > a:focus,
+.navbar-erum2020 .navbar-nav > .active > a:hover,
+.navbar-erum2020 .navbar-nav .dropdown-menu > .active > a,
+.navbar-erum2020 .navbar-nav .dropdown-menu > .active > a:focus,
+.navbar-erum2020 .dropdown-menu .navbar-nav > .active > a:hover {
+  color: #0c154d;
+  background-color: #778bc5;
+}
+/* collapsed navbar button */
+.navbar-erum2020 .navbar-nav .dropdown-menu {
+  background-color: #2b3990;
+}
+.navbar-erum2020 .navbar-toggle:focus,
+.navbar-erum2020 .navbar-toggle:hover {
+  background-color: #0c154d;
+}
+.navbar-erum2020 .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+.navbar-erum2020 .navbar-toggle:focus .icon-bar,
+.navbar-erum2020 .navbar-toggle:hover .icon-bar {
+  background-color: #ec7623;
+}
+/* badge-looking button */
+.btn-badge {
+	height: 20px;
+	padding: 0 5px;
+	border-radius: 3px;
+	font-family: DejaVu Sans,Verdana,Geneva,sans-serif;
+	font-size: 11px;
+}
+.btn-badge {
+  color: #fff;
+  background-color: #2b3990;
+  border-color: #2b3990;
+}
+.btn-badge:focus,
+.btn-badge:hover {
+  color: #0c154d;
+  background-color: #778bc5;
+}
+
+/* collapsible contributions list */
+.btn.collapsed > .fa.fa-minus::before {
+    content: "\f067";
+}
+#contributions > .panel .btn-badge {
+  position: absolute;
+  left: 8px;
+}
+#contributions > .panel {
+  margin-bottom: 0;
+  border-bottom: 1px solid #eee;
+  border-radius: 0;
+  padding: 6px 12px;
+  padding-left: 36px;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  position: relative;
+}
+#contributions > .panel:first-of-type {
+  border-top: 1px solid #eee;
+}
+#contributions .details > div {
+  margin-top: 6px;
+}
+
+
+/* ========================================================================== */
+/* General customization of gallery pages */
+/* ---------------------------------------------------------------------------*/
+
+/* Hide the usual title header: it is re-created inside each page
+   and customized with metadata for the galery pages */
+#header {
+  display: none;
+}
+
+/* Customized style for the before and after elements and their content */
+
+/* There is no padding nor margin in the main body container (see main.js) */
+.gallery-before .row, .gallery-after .row  {
+  padding: 0 10px;
+  margin: 0; /* .row has negative margin */
+}
+.gallery-before {
+  margin-top: 10px;
+}
+
+/* Smaller space around hr */
+.gallery-before hr, .gallery-after hr {
+  margin: 10px 0;
+}
+
+/* Sensible default for non-responsive content */
+#gallery-iframe {
+  height: 75vh;
+}

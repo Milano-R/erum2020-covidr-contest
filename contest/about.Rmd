@@ -1,0 +1,13 @@
+---
+title: "About :: eRum2020 CovidR"
+---
+
+<h1>eRum2020 CovidR Contest</h1>
+
+```{r include='false'}
+submit_link <- "submit.html"
+```
+
+```{r child='../_fragments/covidr-intro.Rmd'}
+```
+
