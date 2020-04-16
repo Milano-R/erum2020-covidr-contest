@@ -2,6 +2,7 @@ name: "erum2020-covidr-contest"
 output:
   html_document:
     css: assets/styles.css
+    highlight: kate
     includes:
       in_header: "_includes/favicon.html"
 navbar:

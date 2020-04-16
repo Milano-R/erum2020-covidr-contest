@@ -17,6 +17,7 @@ abstract: |
   main features (max 800 characters, including spaces). The usage of publicly 
   available data should be explictly mentioned.
   The text can be broken across multiple lines, each indented with two spaces.
+  
 # Short name to be used in the website Gallery menu (can be the same as title)
 menu_entry: Short title
 # URL of the public source code repository
