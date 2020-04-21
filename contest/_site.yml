@@ -4,7 +4,9 @@ output:
     css: assets/styles.css
     highlight: kate
     includes:
-      in_header: "_includes/favicon.html"
+      in_header:
+      - "_includes/favicon.html"
+      - "_includes/webfonts.html"
 navbar:
   title: eRum2020::CovidR
   type: erum2020

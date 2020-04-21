@@ -4,8 +4,9 @@
 /* ---------------------------------------------------------------------------*/
 
 body {
-  font-family: "Roboto", Sans-serif;
+  font-family: "Roboto", Sans-serif; /* see also _includes/webfonts.html */
   color: #696969;
+  font-size: 16px;
 }
 
 
@@ -17,6 +18,7 @@ body {
 .navbar-erum2020 {
   background-color: #2b3990;
   border-color: #0c154d;
+  font-size: 14px;
 }
 /* brand */
 .navbar-erum2020 .navbar-brand {
