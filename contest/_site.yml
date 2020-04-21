@@ -19,9 +19,9 @@ navbar:
       icon: fa-arrow-circle-up
       href: submit.html
   right:
-    - text: "eRum2020"
+    - text: "e-Rum2020"
       href: https://2020.erum.io/
-    - text: "GitHub"
+    - text: ""
       icon: fa-github
       href: https://github.com/Milano-R/erum2020-covidr-contest
 gallery:

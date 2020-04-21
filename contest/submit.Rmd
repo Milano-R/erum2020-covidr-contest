@@ -1,5 +1,5 @@
 ---
-title: "Submit :: eRum2020 CovidR"
+title: "Submit :: e-Rum2020 CovidR"
 ---
 
 <h1>Submit your Contribution</h1>

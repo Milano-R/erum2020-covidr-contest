@@ -1,12 +1,12 @@
 ---
-title: "eRum2020 CovidR Contest"
+title: "e-Rum2020 CovidR Contest"
 site: rmdgallery::gallery_site
 ---
 
 <h1>Welcome to the CovidR Contest!</h1>
 
 
-[**eRum2020::CovidR**](about.html) is an open-source contest and pre-conference event launched by the 2020 European R Users Meeting ([**eRum2020**](https://2020.erum.io/)), featuring any work done with R around the topic of the [**COVID-19 pandemic**](https://www.who.int/emergencies/diseases/novel-coronavirus-2019).
+[**eRum2020::CovidR**](about.html) is an open-source contest and pre-conference event launched by the 2020 European R Users Meeting ([**e-Rum2020**](https://2020.erum.io/)), featuring any work done with R around the topic of the [**COVID-19 pandemic**](https://www.who.int/emergencies/diseases/novel-coronavirus-2019).
 
 The pre-conference event will take place on **May 29th**, when selected participants will be invited to present their work and the contest winners will be announced and awarded with e-prizes. Contributions can be **[submitted](submit.html) until May 22nd** and are made available in this website, where the wider community is invited to provide feedback. The winner(s) will be announced during the conference pre-event on **May 29th**.
 

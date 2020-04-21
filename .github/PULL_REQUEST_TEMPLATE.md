@@ -1,4 +1,4 @@
-Thanks for contributing your submission to the eRum2020 CovidR contest.
+Thanks for contributing your submission to the e-Rum2020 CovidR contest.
 
 **For CovidR contributors:**
 

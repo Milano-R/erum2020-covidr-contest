@@ -1,8 +1,8 @@
 ---
-title: "About :: eRum2020 CovidR"
+title: "About :: e-Rum2020 CovidR"
 ---
 
-<h1>eRum2020 CovidR Contest</h1>
+<h1>e-Rum2020 CovidR Contest</h1>
 
 ```{r include='false'}
 submit_link <- "submit.html"
