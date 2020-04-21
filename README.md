@@ -192,6 +192,9 @@ Request is reviewed, approved, and merged. Your contribution will then
 appear in the [CovidR
 Gallery](https://milano-r.github.io/erum2020-covidr-contest).
 
+We have prepared a [video tutorial](https://youtu.be/pqrcxRL7AtU)
+illustrating the submission process described above.
+
 If you have any problems you can also contact us at:
 <covidrcontest@erum.io>.
 

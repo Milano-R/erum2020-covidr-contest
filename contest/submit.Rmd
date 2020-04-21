@@ -5,5 +5,17 @@ title: "Submit :: e-Rum2020 CovidR"
 <h1>Submit your Contribution</h1>
 
 ```{r, echo=FALSE, results='asis'}
-cat(knitr::knit(quiet = TRUE, text = readLines("../CONTRIBUTING.md")[-1]))
+# content from CONTRIBUTING.md excluding heading
+txt <- readLines("../CONTRIBUTING.md")[-1]
+
+# replace the video tutorial link with an actual embedding
+video_n <- grep("video tutorial", txt)
+txt <- c(
+  head(txt, video_n - 1L),
+  readLines("../_fragments/submission-tutorial-embed.Rmd"),
+  "<p/>",
+  tail(txt, -video_n)
+)
+
+cat(knitr::knit(quiet = TRUE, text = txt))
 ```
