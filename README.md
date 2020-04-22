@@ -35,7 +35,7 @@ data geeks, but it’s open to data scientists, analysts, academics and
 researchers that may use the single simplest R function, but just on the
 right question, at the right time, tackling the many doubts cast by this
 so vast paradigmatic change we’re all living. Being original in the
-contest means being able to address different aspects of the pandemics.
+contest means being able to address different aspects of the pandemic.
 The CovidR contest is looking for such excellence and originality and we
 will also judge how R analytics can be an efficient and valid technical
 service to this effort and in such a context.
