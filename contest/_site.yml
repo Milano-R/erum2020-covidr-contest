@@ -4,7 +4,9 @@ output:
     css: assets/styles.css
     highlight: kate
     includes:
-      in_header: "_includes/favicon.html"
+      in_header:
+      - "_includes/favicon.html"
+      - "_includes/webfonts.html"
 navbar:
   title: eRum2020::CovidR
   type: erum2020
@@ -19,9 +21,9 @@ navbar:
       icon: fa-arrow-circle-up
       href: submit.html
   right:
-    - text: "eRum2020"
+    - text: "e-Rum2020"
       href: https://2020.erum.io/
-    - text: "GitHub"
+    - text: ""
       icon: fa-github
       href: https://github.com/Milano-R/erum2020-covidr-contest
 gallery:

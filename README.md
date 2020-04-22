@@ -1,9 +1,9 @@
 
-# eRum2020 CovidR Contest
+# e-Rum2020 CovidR Contest
 
-**CovidR** is an [e-Rum2020](https://2020.erum.io/) **pre-conference
-event** featuring a contest of R contributions around the topic of the
-[COVID-19
+**CovidR** is an [e-Rum2020 **pre-conference
+event**](https://2020.erum.io/covidr-contest/) featuring a contest of R
+contributions around the topic of the [COVID-19
 pandemic](https://www.who.int/emergencies/diseases/novel-coronavirus-2019).
 
 Contributions can be submitted **until May 22nd**, and the online
@@ -13,14 +13,41 @@ the event, where the CovidR contest winner(s) will be announced and will
 receive their e-prizes. Finally, the best overall contribution will also
 be invited to present at the main e-Rum2020 conference (June 17th-20th).
 
-**How to participate to CovidR**
+### Philosophy
+
+***The contest in the right context*** — Due to the relevance of the
+topic, we would like to clarify some points so that both the
+participants and their audience correctly engage with the CovidR
+contest.
+
+The COVID-19 data assets made available by authoritative institutions
+are immensely useful. However, their incompleteness and differences in
+collection policies may open up to misunderstanding and
+miscommunication. Data scientists should force themselves to be
+responsible data narrators and communicators. To what extent can Rstats
+be a tool for data narrative? Can we use our tools to uncover missing
+data and data wrong-doing? A beautiful visualization is not necessarily
+about beautiful data, but it’s beautiful when it allows people to
+understand what we know as well as (more often) what we actually do not.
+
+The CovidR contest is mostly about R analytics technicalities and for
+data geeks, but it’s open to data scientists, analysts, academics and
+researchers that may use the single simplest R function, but just on the
+right question, at the right time, tackling the many doubts cast by this
+so vast paradigmatic change we’re all living. Being original in the
+contest means being able to address different aspects of the pandemics.
+The CovidR contest is looking for such excellence and originality and we
+will also judge how R analytics can be an efficient and valid technical
+service to this effort and in such a context.
+
+### How to participate
 
   - Provide us with your contribution by May 22nd using the GitHub
     repository, following the instructions in the
     [‘Submit’](#submit-a-contribution) section.
   - A GitHub account is needed in order to submit a contribution.
 
-**What you will get** by participating to CovidR
+### What you will get
 
   - All contributions will be featured in the [CovidR
     Gallery](https://milano-r.github.io/erum2020-covidr-contest)
@@ -35,18 +62,19 @@ be invited to present at the main e-Rum2020 conference (June 17th-20th).
   - The ultimate contest winner will be invited to present at
     [e-Rum2020](https://2020.erum.io/).
 
-**How to win**
+### How to win
 
 An internal jury will pick the winner(s) by evaluating:
 
-  - technical quality of the work;
-  - popularity of the work among the community - based on thumbs up in
+  - technical quality of the work – i.e. interesting, innovative and
+    best-practice usage of the R language;
+  - popularity of the work among the community – based on thumbs up in
     the CovidR Gallery.
 
 The winner(s) will be announced during the pre-conference event on May
 29th.
 
-**Participation rules**
+### Participation rules
 
   - Any work or analysis must be performed starting from official data
     (governmental, institutional, national or international), providing
@@ -150,6 +178,9 @@ Request is reviewed, approved, and merged. Your contribution will then
 appear in the [CovidR
 Gallery](https://milano-r.github.io/erum2020-covidr-contest).
 
+We have prepared a [video tutorial](https://youtu.be/pqrcxRL7AtU)
+illustrating the submission process described above.
+
 If you have any problems you can also contact us at:
 <covidrcontest@erum.io>.
 
@@ -157,7 +188,7 @@ If you have any problems you can also contact us at:
 
 ## Code of Conduct
 
-This project is governed by [eRum2020 Code of
+This project is governed by [e-Rum2020 Code of
 Conduct](https://2020.erum.io/about/code-of-conduct). By participating,
 you are expected to uphold this code.
 

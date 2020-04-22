@@ -1,6 +1,6 @@
 ---
 name: Submit a contribution
-about: Participate to the eRum2020 CovidR contest.
+about: Participate to the e-Rum2020 CovidR contest.
 title: 'Your submission title'
 labels: 'submission'
 assignees: '@riccardoporreca'
