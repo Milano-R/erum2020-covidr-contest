@@ -17,42 +17,28 @@ be invited to present at the main e-Rum2020 conference (June 17th-20th).
 
 ***The contest in the right context*** — Due to the relevance of the
 topic, we would like to clarify some points so that both the
-participants and their audience correctly engage with the CovidR contest
+participants and their audience correctly engage with the CovidR
+contest.
 
-The COVID-19 data assets that are made public and shared by
-authoritative institutions are immensely useful for researchers and
-academics globally. However, their incompleteness and differences in
-collection policies across countries may open up to misunderstanding and
+The COVID-19 data assets made available by authoritative institutions
+are immensely useful. However, their incompleteness and differences in
+collection policies may open up to misunderstanding and
 miscommunication. Data scientists should force themselves to be
 responsible data narrators and communicators. To what extent can Rstats
 be a tool for data narrative? Can we use our tools to uncover missing
-data and data wrong-doing?
-
-If data can be visualized, bias and errors can be visualized too, and
-sometimes this can be even more useful\! New forms of visual
-communications can be used to help a less technical audience understand
-and interpret our data analysis and visualization, putting it in the
-right contest and underlying its limitations. A beautiful visualization
-is not necessarily about beautiful data, but it’s beautiful when it
-allows people to understand what we know as well as (more often) what we
-actually do not. This new (unknown) virus is no exception.
+data and data wrong-doing? A beautiful visualization is not necessarily
+about beautiful data, but it’s beautiful when it allows people to
+understand what we know as well as (more often) what we actually do not.
 
 The CovidR contest is mostly about R analytics technicalities and for
 data geeks, but it’s open to data scientists, analysts, academics and
 researchers that may use the single simplest R function, but just on the
 right question, at the right time, tackling the many doubts cast by this
-so vast paradigmatic change we’re all living. For example, what about
-genomics and the multiple sequence alignment of viruses strains, their
-mutational trajectories, the reconstruction of geographical spread? What
-about the consequences of national lockdowns on mobility, commuting,
-flying? What about the consequences on data network usage and overloads,
-logistics, e-commerce, economics?
-
-Being original in the contest means being able to address different
-aspects of the pandemics. The CovidR Contest is looking for such
-excellence and originality and we will also judge how R analytics can be
-an efficient and valid technical service to this effort and in such a
-context.
+so vast paradigmatic change we’re all living. Being original in the
+contest means being able to address different aspects of the pandemics.
+The CovidR contest is looking for such excellence and originality and we
+will also judge how R analytics can be an efficient and valid technical
+service to this effort and in such a context.
 
 ### How to participate
 
