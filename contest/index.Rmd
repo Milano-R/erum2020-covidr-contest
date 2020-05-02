@@ -48,7 +48,12 @@ tags$div(
         tags$div(
           class = "abstract",
           tags$em("Abstract"), htmltools::HTML("&mdash;"), 
-          one_meta$abstract
+          htmltools::HTML(gsub(
+              "</?p>", "", # the code is wrapped inside <p></p> by markdownToHTML
+              markdown::markdownToHTML(
+                text = one_meta$abstract, fragment.only = TRUE
+              )
+          ))
         ),
         tags$div(
           class = "repo",
