@@ -76,7 +76,7 @@
       title = title,
       body = htmltools::tagList(
         tags$p(tags$em(author)),
-        tags$p(abstract)
+        htmltools::HTML(markdown::markdownToHTML(text = abstract, fragment.only = TRUE))
       )
     ),
     bsplus::bs_modal(
