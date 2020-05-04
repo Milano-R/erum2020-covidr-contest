@@ -8,6 +8,6 @@ abstract: |
   of the Italian Government through the COVID-19 repository.
 menu_entry: COVID-19 Time-Dependent SIR Model
 repository: https://github.com/hypermynds/covid19
-type: rmarkdown
+type: webpage
 content: https://covid19.hypermynds.com
-date: 2020-05-04
+date: 2020-05-04-16-15
