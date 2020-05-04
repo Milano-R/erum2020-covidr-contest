@@ -1,5 +1,5 @@
 # Contribution's title, author, abstract
-title: Realtime interactive global distribution of 2019-nCov showing cases deaths and cases in last 15 days 
+title: "Real-time Interactive Global Distribution of 2019-nCov: Cases, Deaths, and Cases in Last 15 Days" 
 author: Matt Malishev
 abstract: |
   Interactive map of coronavirus 2019-nCov global distribution using live webscraped data from the [European Centre for Disease Prevention and Control (ECDC)](https://www.ecdc.europa.eu/en/geographical-distribution-2019-ncov-cases).  
