@@ -7,4 +7,4 @@ Imports:
   rmdgallery,
   yaml
 Remotes:
-  riccardoporreca/rmdgallery@v0.3.0
+  riccardoporreca/rmdgallery@v0.3.1
