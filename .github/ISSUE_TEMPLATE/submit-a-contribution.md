@@ -41,5 +41,6 @@ In addition:
 - [ ] Send an email to covidrcontest@erum.io (for further direct communication down the road)
      - Subject: "Submission to CovidR: Issue #00", where #00 is the number of this Issue
      - Content: A full link to this Issue
+     - Optionally include your social media profiles (Twitter, LinkedIn, Facebook): we will use them to `@mention` you while sharing the contribution through our channels.
      
 If you have questions specific to your submission, used the comments in this Issue.
