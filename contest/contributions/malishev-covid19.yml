@@ -8,4 +8,4 @@ menu_entry: Interactive map of 2019-nCov global distribution
 repository: https://github.com/darwinanddavis/worldmaps/blob/gh-pages/docs/coronavirus_.R
 type: webpage
 content: https://darwinanddavis.github.io/worldmaps/coronavirus.html # URL of the webpage
-date: 2020-05-04-16-00
+date: 2020-05-04-16:00
