@@ -10,3 +10,6 @@ jobs:
         env:
           GITHUB_CONTEXT: ${{ toJson(github) }}
         run: echo "$GITHUB_CONTEXT"
+      - uses: actions/checkout@v2
+      - run: git status
+      - run: git log -1
