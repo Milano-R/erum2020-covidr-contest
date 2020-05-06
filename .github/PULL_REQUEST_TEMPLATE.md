@@ -23,5 +23,5 @@ For CovidR maintainers:
 - [ ] Squash-merge the pull request (commit headline will be OK, consider cleaning-up the details)
 - [ ] The initial comment should be automatically created, otherwise comment manually with the raw content of [vote-comment.md](../tree/master/contest/_tools/vote-comment.md) and an initial like
 - [ ] Provide here the link to the contribution as published to the gallery: https://milano-r.github.io/erum2020-covidr-contest/___.html
-- [ ] Instruct contributors on how to include their badge from the gallery page.
+- [ ] Instruct contributors on how to include their badge from the gallery page, share on social media, and get a [free ticket](https://www.eventbrite.it/e/covidr-erum-2020-pre-conference-event-tickets-104133026686).
 - [ ] Consolidate e-mailed information.
