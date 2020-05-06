@@ -10,8 +10,8 @@ Submit your contributions by filling the following information
 
 ``` yaml
 # Contribution's title, author, abstract
-title: An Awesome COVID-19 Contribution
-author: The Author
+title: An Awesome COVID-19 Contribution # title case
+author: An Author, Another Author # comma-separated
 abstract: |
   Provide a short abstract with a brief description of your contribution and its
   main features (max 800 characters, including spaces). The usage of publicly
