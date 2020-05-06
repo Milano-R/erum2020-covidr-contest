@@ -1,0 +1,19 @@
+# Contribution's title, author, abstract
+title: COVID-19 Global Cases - Open Source Dashboard
+author: Christoph Schoenenberger
+abstract: |
+  This dashboard shows recent developments of the COVID-19 pandemic. The latest
+  data on the COVID-19 spread are regularly downloaded from Johns Hopkins University 
+  and displayed in a map, summary tables, key figures and plots.
+  
+# Short name to be used in the website Gallery menu (can be the same as title)
+menu_entry: Global COVID-19 Dashboard
+
+# URL of the public source code repository
+repository: https://github.com/chschoenenberger/covid19_dashboard
+
+# Type of contribution and how it can be featured as gallery content
+# Keep only the type and content relevant to your contribution
+# For a Shiny app, provide its URL:
+type: shiny
+content: https://chschoenenberger.shinyapps.io/covid19_dashboard/ # e.g. my-app on shinyapps.io
