@@ -17,7 +17,7 @@ For CovidR maintainers:
 - [ ] Label the PR as "submission"
 - [ ] Check the validity of the submission
 - [ ] Assess completeness of metadata and possibly adjust the `.yml` file-name
-- [ ] Check the integration of the new page in the website gallery (via Actions' artifact locally)
+- [ ] Check the integration of the new page in the website gallery (via Actions' artifact or locally)
 - [ ] Make sure the email to covidrcontest@erum.io was received
 - [ ] Add a field with the current `date` and approx. merge time (e.g. `2020-04-01-16:30` for April 1st, 4:30 PM)
 - [ ] Squash-merge the pull request (commit headline will be OK, consider cleaning-up the details)
