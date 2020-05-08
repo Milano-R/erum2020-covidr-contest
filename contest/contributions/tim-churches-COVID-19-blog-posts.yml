@@ -1,24 +1,13 @@
-# Contribution's title, author, abstract
-title: An Awesome COVID-19 Contribution # title case
+title: COVID-19 and R blog series # title case
 author: Tim Churches # comma-separated
 abstract: |
-  Provide a short abstract with a brief description of your contribution and its
-  main features (max 800 characters, including spaces). The usage of publicly
-  available data should be explictly mentioned.
-  The text can be broken across multiple lines, each indented with two spaces.
-# Short name to be used in the website Gallery menu (can be the same as title)
-menu_entry: Short title
-# URL of the public source code repository
-repository: https://github.com/user/repo
-# Type of contribution and how it can be featured as gallery content
-# Keep only the type and content relevant to your contribution
-# For a Shiny app, provide its URL:
-type: shiny
-content: https://user.shinyapps.io/my-app # e.g. my-app on shinyapps.io
-# For a general online-published resource (e.g. a website / report):
+  A series of blog posts starting on 18th February 2020 demonstrating the use of R to obtain,
+  analyse and visualise COVID-19 data, including scraping of detailed data from wikipedia, the 
+  calculation of the effective reproduction number R(t), which has subquentially become widely adopted
+  as a measure of COVID-19 intervention success, and the creation of both dynamic and stochastic
+  individual contact models to simulate COVID-19 spread and investigate the likely effects of various 
+  public health interventions in a population.
+menu_entry: COVID-19 and R blog series
+repository: https://github.com/timchurches/blog
 type: webpage
-content: https://user.github.io/my-analysis # URL of the webpage
-# For more complex / heterogeneous contributions, you can create a GitHub
-# Gist (https://gist.github.com/) with the relevant information and pointers:
-type: gist
-content: <script...> # place here what you get from the "Embed" button
+content: https://timchurches.github.io/blog/ # URL of the webpage
