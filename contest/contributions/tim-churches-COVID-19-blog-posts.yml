@@ -1,0 +1,14 @@
+title: COVID-19 and R Blog Series
+author: Tim Churches
+abstract: |
+  A series of blog posts starting on 18th February 2020 demonstrating the use of R to obtain,
+  analyse and visualise COVID-19 data, including scraping of detailed data from wikipedia, the
+  calculation of the time-variant effective reproduction number $R_{t}$, which has subquentially become widely adopted
+  as a measure of COVID-19 intervention success, and the creation of both dynamic and stochastic
+  individual contact models to simulate COVID-19 spread and investigate the likely effects of various
+  public health interventions in a population.
+menu_entry: COVID-19 and R blog series
+repository: https://github.com/timchurches/blog
+type: webpage
+content: https://timchurches.github.io/blog/#COVID-19
+date: 2020-05-09-11:30
