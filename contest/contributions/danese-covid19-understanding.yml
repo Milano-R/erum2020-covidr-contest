@@ -1,0 +1,11 @@
+title: Understanding COVID-19 through Italian Excess Deaths Analysis
+author: Alberto Danese
+abstract: |
+  Why are we expecting to understand COVID-19, when most of the analysis rely on the same biased, unreliable and dull data? Death and cases are counted differently across countries. In Italy, regions and provinces have different capabilities and policies when it comes to testing the population. All this makes drawing conclusions a hard and risky task. 
+  Here I suggest an original approach based on overall deaths data from ISTAT, available from 2015 to 2020, done 100% in R.
+  I focus on excess deaths with respect to previous years and answer many questions with a robust quantitative approach. Are men really more hit by COVID-19 than women? Is it true that only the elderly are affected? What really happened in Bergamo and other Italian provinces?
+menu_entry: Understanding COVID-19 with Excess Deaths
+repository: https://github.com/albedan/covidr-excess-deaths-analysis
+type: webpage
+content: https://bookdown.org/content/4119
+date: 2020-05-09-23:45
