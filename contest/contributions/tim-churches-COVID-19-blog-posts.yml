@@ -1,5 +1,5 @@
-title: COVID-19 and R blog series # title case
-author: Tim Churches # comma-separated
+title: COVID-19 and R Blog Series
+author: Tim Churches
 abstract: |
   A series of blog posts starting on 18th February 2020 demonstrating the use of R to obtain,
   analyse and visualise COVID-19 data, including scraping of detailed data from wikipedia, the
@@ -10,4 +10,4 @@ abstract: |
 menu_entry: COVID-19 and R blog series
 repository: https://github.com/timchurches/blog
 type: webpage
-content: https://timchurches.github.io/blog/ # URL of the webpage
+content: https://timchurches.github.io/blog/#COVID-19
