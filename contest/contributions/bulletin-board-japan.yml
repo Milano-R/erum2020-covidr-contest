@@ -1,0 +1,19 @@
+# Contribution's title, author, abstract
+title: Interactive Dashboard for Real-Time Recording of COVID-19 Outbreak in Japan
+author: Wei Su
+abstract: |
+  The project is a website for real-time visualization of the COVID-19 
+  epidemic in Japan, developed mainly using the R language with shiny and other
+  open-source packages. It mainly shows various indicators including, 
+  but not limited to, PCR test, positive confirmed, hospital discharge and death, 
+  as well as trends in each prefecture in Japan, and there are also a variety of
+  charts such as cluster network, new confirmed case in log scale for users' reference.
+
+# Short name to be used in the website Gallery menu (can be the same as title)
+menu_entry: COVID-19 Bulletin Board Japan
+# URL of the public source code repository
+repository: https://github.com/swsoyee/2019-ncov-japan
+# Type of contribution and how it can be featured as gallery content
+type: shiny
+content: https://covid-2019.live/en
+date: 2020-05-09-11:45
