@@ -14,3 +14,4 @@ repository: https://github.com/JohnCoene/coronavirus
 # For a Shiny app, provide its URL:
 type: shiny
 content:  https://shiny.john-coene.com/coronavirus/
+date: 2020-05-11-00:00
