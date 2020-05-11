@@ -1,13 +1,12 @@
 # Contribution's title, author, abstract
 title: The ten-day coronavirus forecast # title case
-author: Ben Phillips, Melissa Makin, Uli Felzmann # comma-separated
+author: Ben Phillips, Melissa Makin, Uli Felzmann, Ian Marschner # comma-separated
 abstract: |
   Motivated by genuine concern that many countries were being caught flat-footed by the coronavirus pandemic, 
-  we built a shiny app that gives a simple ten-day projection of case numbers under current growth rates, for every country.  
-  The site also provides key metrics of growth, and case detection, and provides state-level analyses for some countries. 
-  The idea was to move us past the paralysis of daily shock and towards important action, 
-  but the site also gives us feedback on how our actions are working. 
-  The data are updated daily, and come from datasets collated by John Hopkins University and the Indian government.
+  we built a shiny app that, for every country, reports estimated case detection and growth rates, and which provides a ten-day projection of active case numbers.
+  The idea was to move us past the paralysis of daily shock and towards important action, but the site also gives us feedback on how our actions are working. 
+  The app uses a combination of methods ranging from simple heuristics to sophisticated deconvolution algorithms.  State-level reporting is also available for some countries. 
+  The data are updated daily, and come from datasets collated by teams at John Hopkins University and Panjab University.
 
 # Short name to be used in the website Gallery menu (can be the same as title)
 menu_entry: The ten-day coronavirus forecast
