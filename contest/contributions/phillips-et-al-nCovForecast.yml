@@ -1,0 +1,20 @@
+# Contribution's title, author, abstract
+title: The Ten-Day Coronavirus Forecast
+author: Ben Phillips, Melissa Makin, Uli Felzmann, Ian Marschner # comma-separated
+abstract: |
+  Motivated by genuine concern that many countries were being caught flat-footed by the coronavirus pandemic, 
+  we built a shiny app that, for every country, reports estimated case detection and growth rates, and which provides a ten-day projection of active case numbers.
+  The idea was to move us past the paralysis of daily shock and towards important action, but the site also gives us feedback on how our actions are working. 
+  The app uses a combination of methods ranging from simple heuristics to sophisticated deconvolution algorithms.  State-level reporting is also available for some countries. 
+  The data are updated daily, and come from datasets collated by teams at John Hopkins University and Panjab University.
+
+# Short name to be used in the website Gallery menu (can be the same as title)
+menu_entry: The ten-day coronavirus forecast
+# URL of the public source code repository
+repository: https://github.com/benflips/nCovForecast
+# Type of contribution and how it can be featured as gallery content
+# Keep only the type and content relevant to your contribution
+# For a Shiny app, provide its URL:
+type: shiny
+content: https://covid19forecast.science.unimelb.edu.au/ # e.g. my-app on shinyapps.io
+date: 2020-05-11-11:00
