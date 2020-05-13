@@ -1,4 +1,4 @@
-title: CoronaDash - clustering-analytical tool for comparing countries' COVID-19 trends
+title: CoronaDash - Clustering-Analytical Tool for Comparing Countries' COVID-19 Trends
 author: Peter Laurinec
 abstract: |
   The CoronaDash is an interactive dashboard that provides advanced time series data mining tools for comparing countries' trends for any derived statistic(s) with the option of user parameter tuning.
@@ -9,3 +9,4 @@ menu_entry: CoronaDash - clustering-analytical tool
 repository: https://github.com/PetoLau/CoronaDash
 type: shiny
 content: https://petolau.shinyapps.io/coronadash/
+date: 2020-05-13-18:30
