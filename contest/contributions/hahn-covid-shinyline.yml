@@ -9,4 +9,4 @@ repository: https://github.com/nicoFhahn/covid_shiny
 type: shiny
 content: https://nicohahn.shinyapps.io/covid19/
 iframe_resizer: false
-date: 2020-05-15-15:00
+date: 2020-05-15-17:15
