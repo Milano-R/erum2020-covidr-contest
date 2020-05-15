@@ -1,0 +1,12 @@
+title: The 2019-2020 Coronavirus Pandemic - A Timeline
+author: Nico Hahn
+abstract: |
+  This app allows the user to scroll through a detailed timeline of key events during the coronavirus pandemic, with charts emphasizing key points in time.
+  It also includes a live map showing the current number of confirmed/recovered/deceased cases for each country.
+  The app uses data from Johns Hopkins University.
+menu_entry: Covid Shinyline
+repository: https://github.com/nicoFhahn/covid_shiny
+type: shiny
+content: https://nicohahn.shinyapps.io/covid19/
+iframe_resizer: false
+date: 2020-05-15-17:15
