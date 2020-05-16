@@ -1,6 +1,8 @@
 {{
 
+  source(site_path("_tools", "utterances-modal.R"))
   utterances_repo <- "Milano-R/erum2020-covidr-contest"
+  site <- "erum2020-covidr-contest"
   tags <- htmltools::tags
   `%>%` <- bsplus::`%>%`
 
@@ -79,21 +81,9 @@
         htmltools::HTML(markdown::markdownToHTML(text = abstract, fragment.only = TRUE))
       )
     ),
-    bsplus::bs_modal(
-      id = "utterances", footer = NULL,
-      title = sprintf('Vote for "%s"', title),
-      body =  htmltools::tagList(
-        tags$p(
-          "Like this contribution to see it presented and awarded at the e-Rum2020",
-          tags$a(href = "about.html", "CovidR contest"),
-          "pre-conference event"
-        ),
-        tags$script(
-          src = "https://utteranc.es/client.js",
-          repo = utterances_repo, `issue-term` = "pathname", label = ":+1:",
-          theme = "github-light", crossorigin = "anonymous", async = NA
-        ),
-      )
+    utterances_modal(
+      id = "utterances", repo = utterances_repo, site = site,
+      title = title, page_name = page_name
     ),
     badge_modal(id = "badge-modal", badge_url),
     tags$hr()
