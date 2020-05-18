@@ -155,5 +155,8 @@ body {
 
 /* Sensible default for non-responsive content */
 #gallery-iframe {
-  height: 75vh;
+  /* maximum height to fit the whole page w/o scrolling */
+  height: calc(100vh - 220px);
+  /* stick to min 300px: the whole page would scroll below ~520px) */
+  min-height: 300px;
 }
