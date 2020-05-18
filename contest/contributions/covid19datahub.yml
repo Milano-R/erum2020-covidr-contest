@@ -17,3 +17,4 @@ repository: https://github.com/covid19datahub/COVID19
 # For a general online-published resource (e.g. a website / report):
 type: webpage
 content: https://covid19datahub.io
+date: 2020-05-18-17:45
