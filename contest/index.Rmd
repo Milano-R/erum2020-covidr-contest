@@ -15,59 +15,90 @@ The **current submissions** feature the contributions below. The corresponding g
 ```{r, echo=FALSE}
 meta <- rmdgallery::gallery_site_config()$gallery$meta
 
-# create shields.yml with the dynamic label for the eRum2020::CovidR badges
+# Create shields.yml with the dynamic label for the eRum2020::CovidR badges
 shields_text <- lapply(meta, function(page_meta) {
   "Accepted"
 })
 yaml::write_yaml(shields_text, "badge-endpoint.yml")
 
-# create the list of contributions
+
+# Create the list of contributions
+# NOTE: We want to allow voting contributions directly from the list, however we
+# cannot have one modal per contribution since utteranc.es seems to struggle
+# when retrieving multiple issues simultaneously. As a workaround, we have only
+# one modal that we update with page-specific utterances and content on click.
+
+source(site_path("_tools", "vote-modal.R"))
+vote_id <- "vote-modal"
+utterances_repo <- "Milano-R/erum2020-covidr-contest"
+site <- "erum2020-covidr-contest"
 `%>%` <- bsplus::`%>%`
 tags <- htmltools::tags
+
 tags$div(
-  id = "contributions", 
+  id = "contributions",
+  # empty modal placeholder
+  vote_modal(vote_id, title = "", repo = NULL),
+  # loop over contributions
   lapply(names(meta), function(name) {
     details_id <- sprintf("details-%s", name)
     href <- sprintf("%s.html", name)
     one_meta <- meta[[name]]
     tags$div(
       class = "panel",
-      htmltools::tag(
-        "button", list(
-          class = "btn btn-badge collapsed",
-          tags$span(class = "fa fa-minus"),
-          `data-parent` = "#contributions"
-        )
-      ) %>% bsplus::bs_attach_collapse(., details_id),
+      htmltools::div(
+        class = "btns",
+        # details accordion button
+        htmltools::tag(
+          "button", list(
+            class = "btn btn-badge collapsed",
+            tags$span(class = "fa fa-minus"),
+            `data-parent` = "#contributions"
+          )
+        ) %>% bsplus::bs_attach_collapse(., details_id),
+        # voting modal button
+        htmltools::tag(
+          "button", list(
+            title = "Vote for this contribution",
+            class = "btn btn-badge",
+            tags$span(class = "fa fa-thumbs-up"),
+            # set page-specific voting modal content
+            onclick = sprintf(
+              "set_vote_modal(%s, %s, %s, %s)",
+              deparse(vote_title(one_meta$title)),
+              deparse(utterances_repo), deparse(site), deparse(one_meta$page_name)
+            )
+          )
+        ) %>% bsplus::bs_attach_modal(., vote_id)
+      ),
+      # headline
       tags$a(
         href = href, one_meta$title
       ),
       "by", tags$em(one_meta$author),
+      # details
       tags$div(
         class = "details collapse", id = details_id,
         tags$div(
           class = "abstract",
-          tags$em("Abstract"), htmltools::HTML("&mdash;"), 
+          tags$em("Abstract"), htmltools::HTML("&mdash;"),
           htmltools::HTML(gsub(
-              "</?p>", "", # the code is wrapped inside <p></p> by markdownToHTML
-              markdown::markdownToHTML(
-                text = one_meta$abstract, fragment.only = TRUE
-              )
+            "</?p>", "", # the code is wrapped inside <p></p> by markdownToHTML
+            markdown::markdownToHTML(
+              text = one_meta$abstract, fragment.only = TRUE
+            )
           ))
         ),
         tags$div(
           class = "repo",
-          tags$em("Repository"), htmltools::HTML("&mdash;"), 
+          tags$em("Repository"), htmltools::HTML("&mdash;"),
           tags$a(
             one_meta$repository, href = one_meta$repository, target = "_blank"
           )
         ),
       )
-      
     )
   })
 )
 
 ```
-
-
