@@ -10,4 +10,4 @@ abstract: |
 menu_entry: COVID-19 Canada Data Explorer
 repository: https://github.com/baranovskypd/covid_ca_covidr
 type: shiny
-content: http://dataenthusiast.ca:3838/covid_ca/
+content: https://peterbar.shinyapps.io/covid_ca_covidr/
