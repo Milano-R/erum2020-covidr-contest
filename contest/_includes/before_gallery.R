@@ -50,7 +50,6 @@
 
   htmltools::tagList(
     # style fine-tunining specific to gallery pages
-    tags$script(src = "assets/main.js"),
     tags$div(
       class = "row",
       tags$h3(title, style = htmltools::css(display = "inline")),
