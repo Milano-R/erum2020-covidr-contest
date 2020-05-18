@@ -1,15 +1,15 @@
 {{
 
-  source(site_path("_tools", "utterances-modal.R"))
+  source(site_path("_tools", "vote-modal.R"))
   utterances_repo <- "Milano-R/erum2020-covidr-contest"
   site <- "erum2020-covidr-contest"
   tags <- htmltools::tags
   `%>%` <- bsplus::`%>%`
 
-  # dynamic badge via shield.io enpoint https://runkit.com/erum2020-covidr/shield
+  # dynamic badge via shield.io endpoint https://runkit.com/erum2020-covidr/shield
   # https://img.shields.io/endpoint?url=https://runkit.io/erum2020-covidr/shield/branches/master/<page>
   # => slow and often unresponsive
-  # dynamic badge via badgen.net enpoint https://runkit.com/erum2020-covidr/badge
+  # dynamic badge via badgen.net endpoint https://runkit.com/erum2020-covidr/badge
   # https://badgen.net/https/runkit.io/erum2020-covidr/badge/branches/master/<page>?cache=300
   # => we need to reduce the cache to 300s (the minimum), as it defaults to 24h
   badge_url <- sprintf(
@@ -50,7 +50,6 @@
 
   htmltools::tagList(
     # style fine-tunining specific to gallery pages
-    tags$script(src = "assets/main.js"),
     tags$div(
       class = "row",
       tags$h3(title, style = htmltools::css(display = "inline")),
@@ -66,7 +65,7 @@
       ) %>% bsplus::bs_attach_modal(., "abstract"),
       badge_button(
         tags$span(class = "fa fa-thumbs-up"), "Like this contribution!"
-      ) %>% bsplus::bs_attach_modal(., "utterances"),
+      ) %>% bsplus::bs_attach_modal(., "vote-modal"),
       tags$a(
         href = "#",
         # use eRum2020 color for the label just on the gallery page
@@ -81,9 +80,11 @@
         htmltools::HTML(markdown::markdownToHTML(text = abstract, fragment.only = TRUE))
       )
     ),
-    utterances_modal(
-      id = "utterances", repo = utterances_repo, site = site,
-      title = title, page_name = page_name
+    vote_modal(
+      id = "vote-modal",
+      title = title,
+      repo = utterances_repo,
+      site = site, page_name = page_name
     ),
     badge_modal(id = "badge-modal", badge_url),
     tags$hr()

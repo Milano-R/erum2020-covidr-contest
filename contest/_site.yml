@@ -7,6 +7,7 @@ output:
       in_header:
       - "_includes/favicon.html"
       - "_includes/webfonts.html"
+      - "_includes/javascript.html"
 navbar:
   title: eRum2020::CovidR
   type: erum2020

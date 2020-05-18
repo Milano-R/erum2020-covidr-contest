@@ -89,7 +89,7 @@ body {
 .btn.collapsed > .fa.fa-minus::before {
     content: "\f067";
 }
-#contributions > .panel .btn-badge {
+#contributions > .panel > .btns {
   position: absolute;
   left: 8px;
 }
@@ -98,7 +98,7 @@ body {
   border-bottom: 1px solid #eee;
   border-radius: 0;
   padding: 6px 12px;
-  padding-left: 36px;
+  padding-left: 64px;
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
   box-shadow: none;
