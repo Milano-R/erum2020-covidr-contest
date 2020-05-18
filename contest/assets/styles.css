@@ -66,6 +66,13 @@ body {
 .navbar-erum2020 .navbar-toggle:hover .icon-bar {
   background-color: #ec7623;
 }
+/* make sure the gallery dropdown is scrollable if it does not fit
+   https://stackoverflow.com/questions/19227496/scrollable-menu-with-bootstrap-menu-expanding-its-container-when-it-should-not */
+.navbar .dropdown-menu {
+    height: auto;
+    max-height: calc(100vh - 60px);
+    overflow-x: hidden;
+}
 /* badge-looking button */
 .btn-badge {
 	height: 20px;
