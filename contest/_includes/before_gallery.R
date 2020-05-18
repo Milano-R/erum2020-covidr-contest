@@ -1,6 +1,6 @@
 {{
 
-  source(site_path("_tools", "utterances-modal.R"))
+  source(site_path("_tools", "vote-modal.R"))
   utterances_repo <- "Milano-R/erum2020-covidr-contest"
   site <- "erum2020-covidr-contest"
   tags <- htmltools::tags
