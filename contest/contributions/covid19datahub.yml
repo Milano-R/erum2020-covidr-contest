@@ -1,0 +1,20 @@
+# Contribution's title, author, abstract
+title: COVID-19 Data Hub
+author: Emanuele Guidotti, David Ardia
+abstract: |
+  Built with R, available in any language, the Hub provides a worldwide, fine-grained, unified dataset helpful for a better understanding of COVID-19.
+  The user can instantly download up-to-date, structured, historical daily data across several official sources. The data are hourly crunched by the R package COVID19 and made available in csv format on a cloud storage, so to be easily accessible from Excel, R, Python... and any other software.  
+  We welcome external contributors to join and extend the number of supporting data sources. All sources are properly documented, along with their citation.  
+  COVID-19 Data Hub can spot misalignments between data-sources and automatically inform authorities of possible errors. All logs are available at https://covid19datahub.io  
+  Available on CRAN.
+
+# Short name to be used in the website Gallery menu (can be the same as title)
+menu_entry: COVID-19 Data Hub
+# URL of the public source code repository
+repository: https://github.com/covid19datahub/COVID19
+# Type of contribution and how it can be featured as gallery content
+# Keep only the type and content relevant to your contribution
+# For a general online-published resource (e.g. a website / report):
+type: webpage
+content: https://covid19datahub.io
+date: 2020-05-18-17:45
