@@ -13,3 +13,4 @@ jobs:
       - uses: actions/checkout@v2
       - run: git status
       - run: git log -1
+      - run: exit 1
