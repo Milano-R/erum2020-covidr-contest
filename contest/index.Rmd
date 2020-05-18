@@ -15,7 +15,7 @@ The **current submissions** feature the contributions below. The corresponding g
 ```{r, echo=FALSE}
 meta <- rmdgallery::gallery_site_config()$gallery$meta
 
-# Create shields.yml with the dynamic label for the eRum2020::CovidR badges
+# Create YAML file with the dynamic label for the eRum2020::CovidR badges
 shields_text <- lapply(meta, function(page_meta) {
   "Accepted"
 })
