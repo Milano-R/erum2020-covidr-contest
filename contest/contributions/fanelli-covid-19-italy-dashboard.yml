@@ -1,0 +1,13 @@
+title: Dashboard to Monitor Covid-19 Pandemy in Italy
+author: Vito Fanelli
+abstract: |
+  This dashboard allows to monitor Covid-19 pandemy in Italy. It is based on daily data of Protezione Civile.
+  The "Italy" section shows the number of total cases, actual cases, healed and deads at country level.
+  It contains daily trends, moving averages and mortality rate.
+  In the "Region" section there are the same information at regional level.
+
+menu_entry: Covid-19 in Italy
+repository: https://github.com/VitoFanelli/covid-19-italy
+type: shiny
+content: https://vitofanelli1.shinyapps.io/Covid19Italy/
+date: 2020-05-18-19:10
