@@ -1,0 +1,12 @@
+title: Covid'19 Twitter Sentiment Analysis Shiny App
+author: Simileoluwa Kafaru
+abstract: |
+  There are so many controvesies and daily trending issues surrounding the Covid'19 Pandemic. Twitter is one of the major Social Media platforms that
+  catches news and trends in real-time, with a wide user base. Here, I focus on a Sentiment Analysis Shiny App, capable of collecting tweets in real-time with
+  a choice of major hashtags. Sentiment Analysis is performed on the retrieved tweets and dashboarded. Also, a daily stats of the Covid'19 pandemic
+  is presented, all with real-time updates.
+menu_entry: Covid'19 Twitter Analytics
+repository: https://github.com/simmieyungie/Corona-Virus
+type: shiny
+content: https://simmie.shinyapps.io/Corona_Dashboard/
+date: 2020-05-18-22:30
