@@ -14,3 +14,4 @@ repository: https://github.com/dennis-hammerschmidt/Coro2vid-19
 # For a Shiny app, provide its URL:
 type: shiny
 content: https://cosima-meyer.shinyapps.io/coro2vid-19-shinyapp/ # e.g. my-app on shinyapps.io
+date: 2020-05-19-23:15
