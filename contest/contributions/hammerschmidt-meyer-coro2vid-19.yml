@@ -1,0 +1,17 @@
+# Contribution's title, author, abstract
+title: Coro2vid-19 — Leveraging Knowledge About Coronaviruses To Fight COVID-19 # title case
+author: Dennis Hammerschmidt, Cosima Meyer # comma-separated
+abstract: |
+  Science-based solutions are crucial – particularly in times of a pandemic. We provide a platform for researchers to find similar articles related to coronaviruses covering more than 22,000 academic abstracts published between 1955 and 2020 from [Kaggle](https://bit.ly/2LGuwNR).
+  We build our ShinyApp using 100-dimensional word embeddings from Tensorflow through the keras API in R, use Doc2vec from the textTinyR package to estimate similarity scores of abstracts and provide interactive graphs in plotly with clusters of similar articles based on k-nearest neighbors. Users can search for keywords, specific papers, and authors and receive graphs and tables showing related research. 
+  The ShinyApp interface is based on the [SemanticLibrarian template](https://bit.ly/2Zh8EjQ).
+# Short name to be used in the website Gallery menu (can be the same as title)
+menu_entry: Coro2vid-19
+# URL of the public source code repository
+repository: https://github.com/dennis-hammerschmidt/Coro2vid-19
+# Type of contribution and how it can be featured as gallery content
+# Keep only the type and content relevant to your contribution
+# For a Shiny app, provide its URL:
+type: shiny
+content: https://cosima-meyer.shinyapps.io/coro2vid-19-shinyapp/ # e.g. my-app on shinyapps.io
+date: 2020-05-19-23:15
