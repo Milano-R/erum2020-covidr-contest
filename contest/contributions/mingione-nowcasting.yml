@@ -16,3 +16,4 @@ repository: https://github.com/minmar94/StatGroup19
 # For a Shiny app, provide its URL:
 type: shiny
 content: https://statgroup19.shinyapps.io/NowCastingCovid19/
+date: 2020-05-21-00:30
