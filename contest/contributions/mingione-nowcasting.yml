@@ -1,9 +1,9 @@
 # Contribution's title, author, abstract
-title: Nowcasting Italian Covid-19 epidemic
+title: Nowcasting Italian Covid-19 Epidemic
 author: Marco Mingione, Pierfrancesco Alaimo Di Loro # comma-separated
 abstract: |
-  Our work is intended to give people an easy tool for accessing information 
-  about the Italian COVID-19 epidemic in an interactive and transparent way. 
+  Our work is intended to give people an easy tool for accessing information
+  about the Italian COVID-19 epidemic in an interactive and transparent way.
   The web application we built is automatically updated every day after the Italian Protezione Civile report (Data Source)
   and shows both descriptive and modeling analysis, giving the user the possibility to customize several choices. 
  
