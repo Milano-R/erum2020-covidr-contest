@@ -102,8 +102,8 @@ cleanup_utterances_comments <- function(owner, repo,
 
   # returns additional comments comments until the first notification comment
   # (notified = TRUE), or after the last one (notified = FALSE)
-  get_issue_comments <- function(issue, notified) {
-    comments <- gh("issues/:issue/comments", issue = issue)
+  get_issue_comments <- function(id, notified) {
+    comments <- gh("issues/:issue/comments", issue = id)
     # ignore automatically-generated top comment
     stopifnot(comments[[1L]]$user$type == "Bot")
     comments <- comments[-1L]
@@ -166,7 +166,7 @@ cleanup_utterances_comments <- function(owner, repo,
       if (!dry_run) {
         comment <-   gh(
           method = "POST",
-          sprintf("issues/%d/comments", issue),
+          sprintf("issues/%d/comments", issue$number),
           body = notification_comment
         )
         message("> created comment with id: ", comment$id)
