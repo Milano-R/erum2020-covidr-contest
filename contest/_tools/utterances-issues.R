@@ -153,7 +153,7 @@ cleanup_utterances_comments <- function(owner, repo,
         if (!dry_run) {
           gh(
             method = "DELETE",
-            sprintf("issues/comments/%s", id)
+            sprintf("issues/comments/%s", comment$id)
           )
         }
       })
