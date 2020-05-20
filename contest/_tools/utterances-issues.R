@@ -112,7 +112,11 @@ cleanup_utterances_comments <- function(owner, repo,
       vapply(comments, `[[`, "body", FUN.VALUE = "")
     )
     if (notified) {
-      comments <- suppressWarnings(head(comments, min(notification_idx)))
+      comments <- if (length(notification_idx) > 0L) {
+        suppressWarnings(head(comments, min(notification_idx)))
+      } else {
+        list()
+      }
     } else {
       comments <- suppressWarnings(tail(comments, -max(notification_idx)))
     }
