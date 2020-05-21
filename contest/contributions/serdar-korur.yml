@@ -13,7 +13,7 @@ abstract: |
   their health status, the app monitors temporal and spatial changes and estimates sudden
   increases or decreases on local risks.
   The app is built with shinyMobile & firebase, echarts4r and fireData packages.
-menu_entry: cRew
+menu_entry: cRew Symptom Tracker
 repository: https://github.com/korur/cRew
 type: shiny
 content: https://tools.dataatomic.com/shiny/cRew/
