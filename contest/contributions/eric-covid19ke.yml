@@ -1,12 +1,13 @@
-
-title: COVID_19 KENYA FLEXDASHBOARD
-author: Eric Wanjau 
-abstract: 
+title: COVID_19 Kenya Flexdashboard
+author: Eric Wanjau
+abstract:
  This COVID-19 in Kenya Dashboard seeks to provide an overview of the 2019 Novel Coronavirus COVID-19 (2019-nCoV) epidemic.
  The dashboard mainly focuses on Kenya by visualising the total reported cases, the daily reported cases and their distribution per county.
  It also visualises the total cases globally and then focuses on the cases in Africa and its respective countries. The input data for
- this dashboard is the coronavirus R package (dev version) by Rami Krispin and the Ministry of Health, Kenya. 
+ this dashboard is the coronavirus R package (dev version) by Rami Krispin and the Ministry of Health, Kenya.
 menu_entry: Covid_19 Kenya
 repository: https://github.com/R-icntay/covid19_ke
 type: webpage
+css:
+  min-height: 100vh
 content: https://r-icntay.github.io/covid19_ke/#county-stats
