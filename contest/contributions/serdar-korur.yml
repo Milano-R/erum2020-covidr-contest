@@ -1,6 +1,9 @@
 title: coRanavirus early-warning (cRew) Symptom Tracker 
 author: Serdar Korur, Dataatomic
 abstract: |
+  Important Note >> The app uses Google firebase authentication to work. 
+  Thus, only authenticated users are able to interact with the app.[For More info and a Demo on youTube..](https://github.com/korur/cRew#readme) 
+  
   Covid-19 pandemic caught us off-guard. To avoid this happening again we probably need tools
   that enable us to react quickly when a new disease emerges and set measures to minimize its spread. 
   In an attempt in this direction, we developed cRew. 
