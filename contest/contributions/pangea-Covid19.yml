@@ -1,12 +1,12 @@
 title: Pangea - COVID19 in Italy
 author: Pangea
 abstract: |
-  PangeaCovid19 is an interactive tool that aims to bring insights on the spread of Covid19 in Italy. It is divided in 5 sections:
-in ‘Previsioni’ we show short term forecasts for the total counts of infected people and deaths obtained with 3 different statistical models;
-in ‘Terapia Intensiva’ we show the occupation of intensive care units by covid19 patients on a regional basis;
-in ‘Per Regione/Per Provincia’ we show the trend several variables (new cases, deaths, swabs, number of tested people) on a regional basis allowing a comparison between regions;
-in ‘Matematica della diffusione’ we explain why we use different forecasting models;
-in ‘Diario’ you can find some articles and daily diaries to monitor the situation.
+  PangeaCovid19 is an interactive tool that aims to bring insights on the spread of Covid19 in Italy. It is divided in 5 sections
+in Previsioni we show short term forecasts for the total counts of infected people and deaths obtained with 3 different statistical models;
+in Terapia Intensiva we show the occupation of intensive care units by covid19 patients on a regional basis;
+in Per Regione/Per Provincia we show the trend several variables (new cases, deaths, swabs, number of tested people) on a regional basis allowing a comparison between regions;
+in Matematica della diffusione we explain why we use different forecasting models;
+in Diario you can find some articles and daily diaries to monitor the situation.
 Data are provided by Protezione Civile, ISTAT and Ministero della Salute.
 menu_entry: PangeaCovid19
 repository: https://github.com/user/repo
