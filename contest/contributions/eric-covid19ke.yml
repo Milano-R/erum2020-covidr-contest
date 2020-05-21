@@ -9,6 +9,6 @@ menu_entry: Covid_19 Kenya
 repository: https://github.com/R-icntay/covid19_ke
 type: webpage
 css:
-  min-height: 100vh
+  min-height: calc(100vh - 50px)
 content: https://r-icntay.github.io/covid19_ke/#county-stats
 date: 2020-05-21-15:25
