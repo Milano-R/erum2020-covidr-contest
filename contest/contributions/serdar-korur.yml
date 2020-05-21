@@ -1,0 +1,16 @@
+title: coRanavirus early-warning (cRew) Symptom Tracker 
+author: Serdar Korur, Dataatomic
+abstract: |
+  Covid-19 pandemic caught us off-guard. To avoid this happening again we probably need tools
+  that enable us to react quickly when a new disease emerges and set measures to minimize its spread. 
+  In an attempt in this direction, we developed cRew. 
+  
+  coRanavirus early-warning (cRew) tracks Covid-19 / flu like disease symptoms in real-time. 
+  The goal is to map in real-time healthy and symptomatic people. As users enter data about 
+  their health status, the app monitors temporal and spatial changes and estimates sudden 
+  increases or decreases on local risks. 
+  The app is built with shinyMobile & firebase, echarts4r and fireData packages.
+menu_entry: cRew
+repository: https://github.com/korur/cRew
+type: shiny
+content: https://tools.dataatomic.com/shiny/cRew/
