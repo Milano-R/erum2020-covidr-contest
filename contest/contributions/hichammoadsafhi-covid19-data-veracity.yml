@@ -1,0 +1,17 @@
+# Contribution's title, author, abstract
+title: Centralized and Trusted System (QA) to Fight Misinformation
+author: Hicham Moad Safhi
+abstract: |
+  Myriad of data is generated every minute from everywhere, and in different formats offering the consumers a large availability of information . However,  the reliability of this information differ highly across sources. 
+  Unreliable sources provide misleading and biased information, which might lead to dangerous consequences especially in the case of epidemics, like covid-19 in which falsehoods are a matter of life-and death. 
+  Users find it difficult to manually check all information, therefore,  in this project we propose a question answering tool that can automatically answers the user using a pre-trained model based on reliable data sources.
+# Short name to be used in the website Gallery menu (can be the same as title)
+menu_entry: Fighting misinformation
+# URL of the public source code repository
+repository: https://github.com/hichammoad/Fighting-Covid19-misinformation
+# Type of contribution and how it can be featured as gallery content
+# Keep only the type and content relevant to your contribution
+# For a Shiny app, provide its URL:
+type: shiny
+content: https://research.safhi.me/fighting-covid19-misinformation/
+date: 2020-05-22-14:30
