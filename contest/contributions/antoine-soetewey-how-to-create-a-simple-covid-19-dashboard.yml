@@ -5,7 +5,7 @@ abstract: |
   This article will help you to build a visually appealing dashboard about the spread of COVID-19 Coronavirus specific to a country in R using flexdashboard.
 
 # Short name to be used in the website Gallery menu (can be the same as title)
-menu_entry: How to create a simple Coronavirus dashboard in R
+menu_entry: How to create a simple Coronavirus dashboard specific to your country in R
 # URL of the public source code repository
 repository: https://github.com/AntoineSoetewey/statsandr/blob/master/content/blog/2020-03-23-how-to-create-a-simple-coronavirus-dashboard-specific-to-your-country-in-r.html
 # Type of contribution and how it can be featured as gallery content
