@@ -1,0 +1,16 @@
+# Contribution's title, author, abstract
+title: How to Create a Simple Coronavirus Dashboard Specific to your Country in R
+author: Antoine Soetewey
+abstract: |
+  This article will help you to build a visually appealing dashboard about the spread of COVID-19 Coronavirus specific to a country in R using flexdashboard.
+
+# Short name to be used in the website Gallery menu (can be the same as title)
+menu_entry: "Country-specific Coronavirus Dashboard How-To"
+# URL of the public source code repository
+repository: https://github.com/AntoineSoetewey/statsandr/blob/master/content/blog/2020-03-23-how-to-create-a-simple-coronavirus-dashboard-specific-to-your-country-in-r.Rmd
+# Type of contribution and how it can be featured as gallery content
+# Keep only the type and content relevant to your contribution
+# For a Shiny app, provide its URL:
+type: webpage
+content: https://www.statsandr.com/blog/how-to-create-a-simple-coronavirus-dashboard-specific-to-your-country-in-r/
+date: 2020-05-22-13:30
