@@ -1,4 +1,4 @@
-title: "COVOID: modelling COVID-19 transmission and interventions"
+title: "COVOID: Modelling COVID-19 Transmission and Interventions"
 author: Oisin Fitzgerald, Mark Hanly, Tim Churches (UNSW Medicine)
 abstract: |
   COVOID is an evolving but fully-functional R package and accompanying Shiny app
