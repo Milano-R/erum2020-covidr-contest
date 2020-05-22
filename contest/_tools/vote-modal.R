@@ -7,15 +7,17 @@ vote_modal <- function(id, title, repo, site, page_name) {
       vote_title(title)
     ),
     body =  htmltools::tagList(
+
       tags$p(
-        "Like this contribution to see it presented and awarded at the e-Rum2020",
-        tags$a(href = "about.html", "CovidR contest"),
-        "pre-conference event"
+        "Voting is temporarily unavailable due to an ongoing technical incident"
+        # "Like this contribution to see it presented and awarded at the e-Rum2020",
+        # tags$a(href = "about.html", "CovidR contest"),
+        # "pre-conference event"
       ),
       tags$div(
         id = "vote-modal-utterances",
         if (!is.null(repo)) {
-          vote_utterances(repo, site, page_name)
+          # vote_utterances(repo, site, page_name)
         }
       ),
     )
