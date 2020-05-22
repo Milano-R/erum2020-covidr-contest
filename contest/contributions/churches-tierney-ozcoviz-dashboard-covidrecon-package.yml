@@ -3,16 +3,18 @@ author: Tim Churches (UNSW), Nicholas Tierney (Monash University)
 abstract: |
   OzCoViz is yet another COVID-19 dashboard which nonetheless seeks to go beyond
   the now ubiquitous world maps and cumulative incidence charts to offer a range
-  of principled epidemiological and statistical analyses, as well as some novel 
+  of principled epidemiological and statistical analyses, as well as some novel
   visualisations, including animations. The dashboard leverages the associated
   covidrecon package which encapsulates much of the data processing required by
   the dashboard, thus making the dashboard code dramatically simpler and easier
-  to extend. The site has been created by researchers at Australian 
+  to extend. The site has been created by researchers at Australian
   universities, and hence the focus is on the situation in Australia, within
-  the broader international context, but the site should be easy to adapt for 
+  the broader international context, but the site should be easy to adapt for
   use by other countries.
 menu_entry: OzCoViz dashboard and the covidrecon package
 repository: https://github.com/CBDRH/covidrecon
 type: webpage
+css:
+  min-height: calc(100vh - 50px)
 content: https://cbdrh.github.io/ozcoviz/
 date: 2020-05-22-22:00
