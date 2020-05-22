@@ -18,7 +18,7 @@ abstract: |
   imported cases, enhancing parameter fitting to observed data, and to expand
   the Shiny UI to address the extended model and to manage parameter sensitivity
   analyses and comparisons of intervention scenario.
-menu_entry: "COVOID: modelling COVID-19 transmission and interventions" 
+menu_entry: "COVOID: modelling transmission / interventions" 
 repository: https://github.com/CBDRH/covoid
 type: webpage
 content: https://cbdrh.github.io/covoidance/
