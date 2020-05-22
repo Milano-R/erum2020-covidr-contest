@@ -9,7 +9,7 @@ on:
 
   schedule:
     # every 12 h
-    - cron: '0 3/12 * * *'
+    - cron: '0 3/8 * * *'
 
 jobs:
   cleanup:
