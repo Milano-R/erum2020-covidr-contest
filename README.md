@@ -106,6 +106,13 @@ discussing how you can submit your contribution.
 
 ## Submit a contribution
 
+## Contributions are no longer accepted
+
+**Submissions to e-Rum2020 CovidR contest closed on May 22nd 23:59
+CEST.**
+
+-----
+
 Each participant is requested to provide the following information in
 YAML format, which will allow the contribution to be integrated and be
 visible in the [CovidR
