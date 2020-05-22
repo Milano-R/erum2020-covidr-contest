@@ -2,7 +2,6 @@
 title: 100 k African Hospital and Health Facility Locations # title case
 author: Andy South, Anelda van der Walt, Mark Herringer, Ahmadou Dicko # comma-separated
 abstract: |
-
   An app and R package to improve access to the best-available health facility data for Africa
   to support the response to the pandemic. There are two main Africa-wide sources of open data
   on the locations of > 100k hospitals and health facilities.
@@ -22,4 +21,4 @@ repository: https://github.com/afrimapr/afrihealthsites
 # Keep only the type and content relevant to your contribution
 # For a Shiny app, provide its URL:
 type: shiny
-content: https://https://andysouth.shinyapps.io/healthsites_viewer/ # e.g. my-app on shinyapps.io
+content: https://andysouth.shinyapps.io/healthsites_viewer/ # e.g. my-app on shinyapps.io
