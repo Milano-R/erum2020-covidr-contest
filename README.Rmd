@@ -31,7 +31,7 @@ submit_link <- "#submit-a-contribution"
 # updated the example yaml chunk in the issue template and CONTRIBUTING
 example_yaml <- readLines("contest/contributions/.example.yml")
 contributing <- "CONTRIBUTING.md"
-issue_tpl <- ".github/ISSUE_TEMPLATE/submit-a-contribution.md"
+issue_tpl <- ".github/ISSUE_TEMPLATE/submit-a-contribution.md.disabled"
 .replace_yaml <- function(file) {
   txt <- readLines(file)
   txt_yaml <- c(
