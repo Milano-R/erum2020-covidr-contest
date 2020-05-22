@@ -1,5 +1,11 @@
 # Submit a contribution
 
+## Contributions are no longer accepted
+
+**Submissions to e-Rum2020 CovidR contest closed on May 22nd 23:59 CEST.**
+
+---
+
 Each participant is requested to provide the following information in YAML format, which will allow the contribution to be integrated and be visible in the [CovidR Gallery](https://milano-r.github.io/erum2020-covidr-contest)
 
 ``` yaml
