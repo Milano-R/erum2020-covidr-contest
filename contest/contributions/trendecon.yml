@@ -1,0 +1,25 @@
+# Contribution's title, author, abstract
+title: Daily Economic Indicators Based on Google Searches
+author: Angelica Becerra et al., trendecon team
+abstract: |
+  During the Covid-19 pandemic, information and the (economic and social)
+  situation has changed rapidly. Traditional (economic) indicators are not
+  sufficiently frequent to monitor and forecast (economic and social) activity
+  at high frequency. We use Google search trends to overcome this data gap and
+  create meaningful indicators. We extract daily search data on keywords
+  reflecting consumers' perception of the economic situation. The indicators
+  are available at [www.trendecon.org](https://www.trendecon.org).
+
+  An accompaning R package contains the code to construct long daily time series
+  from Google Trends. Robustness of the data is achieved by querying Google
+  mulitple times. The queries are sampled at daily, weekly and monthy
+  frequencies and then harmonized such that the long term trend is preserved. A
+  more detailed methodological description is given on the
+  [website](https://www.trendecon.org/#method). We are currently summarizing
+  these results in a research paper.
+# Short name to be used in the website Gallery menu (can be the same as title)
+menu_entry: Daily economic indicators
+# URL of the public source code repository
+repository: https://github.com/trendecon
+type: gist
+content: <script src="https://gist.github.com/angelicambg/06307a697c54f09b88ecfe602873c0cd.js"></script> # place here what you get from the "Embed" button
