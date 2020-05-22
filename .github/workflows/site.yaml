@@ -61,7 +61,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Create utterances issues with voting comment
-        if: github.ref == 'refs/heads/master'
+        if: github.ref == 'refs/heads/hotfix/utterances'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
