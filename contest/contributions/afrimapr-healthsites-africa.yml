@@ -14,7 +14,7 @@ abstract: |
   data in Africa.
 
 # Short name to be used in the website Gallery menu (can be the same as title)
-menu_entry: 100 k African Hospital and Health Facility locations
+menu_entry: 100 k African Hospital and Health Facilities
 # URL of the public source code repository
 repository: https://github.com/afrimapr/afrihealthsites
 # Type of contribution and how it can be featured as gallery content
