@@ -34,7 +34,7 @@ function set_vote_modal(title, repo, site, page_name) {
   script.setAttribute('theme', 'github-light');
   script.setAttribute('crossorigin', 'anonymous');
   script.setAttribute('async', 'async');
-  // modal_utterances.appendChild(script);
+  modal_utterances.appendChild(script);
 
 }
 
