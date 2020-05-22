@@ -1,0 +1,14 @@
+# Contribution's title, author, abstract
+title: The Prime Minister's Speech(es)
+author: Gabriele Galatolo et al., Kode Solutions
+abstract: |
+  Italy was the first European country to face the Covid19 crisis and is one of the most hit by the pandemic. This led the Italian Government to take extraordinary decisions and measures to manage the economic and social effects related to the contagions.
+  In this article we posted on our "Kode Covid19 Blog" we analyzed the speeches given by the Italian Prime Minister Giuseppe Conte comparing them with the reactions we retrieved from Italian Twitter messages having crisis-related hashtags (e.g. #coronavirus, #covid19).
+  With simple text-mining techniques and sentiment analysis we provided visualizations and analysis about the crisis and the population feelings seen from the point of view of both Twitter and the Prime Minister conferences.
+
+# Short name to be used in the website Gallery menu (can be the same as title)
+menu_entry: The Prime Minister's Speech(es)
+# URL of the public source code repository
+repository: https://gitlab.com/kode_public/blogdown_website/-/tree/master/content/articles/2020-03-24-speeches-of-the-prime-minister
+type: gist
+content: <script src="https://gist.github.com/gabri985/214a998e7d270e58303519383b3ebf7a.js"></script>
