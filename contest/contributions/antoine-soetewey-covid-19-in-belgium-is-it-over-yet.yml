@@ -13,4 +13,4 @@ repository: https://github.com/AntoineSoetewey/statsandr/blob/master/content/blo
 # For a Shiny app, provide its URL:
 type: webpage
 content: https://www.statsandr.com/blog/covid-19-in-belgium-is-it-over-yet/
-date: 2020-05-22-13:30
+date: 2020-05-22-23:59
