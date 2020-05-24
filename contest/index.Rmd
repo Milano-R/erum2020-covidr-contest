@@ -16,8 +16,9 @@ The set of **accepted submissions** feature the contributions below. The corresp
 meta <- rmdgallery::gallery_site_config()$gallery$meta
 
 # Create YAML file with the dynamic label for the eRum2020::CovidR badges
+short_list_status <- yaml::read_yaml("contributions/.short-list.yml")
 shields_text <- lapply(meta, function(page_meta) {
-  "Accepted"
+  short_list_status[[page_meta$page_name]] %||% "Accepted"
 })
 yaml::write_yaml(shields_text, "badge-endpoint.yml")
 
