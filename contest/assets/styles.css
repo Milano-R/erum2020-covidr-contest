@@ -122,6 +122,9 @@ body {
 #contributions > .panel:first-of-type {
   border-top: 1px solid #eee;
 }
+#contributions > .panel:last-of-type {
+  margin-bottom: 24px;
+}
 #contributions .details > div {
   margin-top: 6px;
 }
