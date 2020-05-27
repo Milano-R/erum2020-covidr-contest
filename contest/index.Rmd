@@ -15,12 +15,22 @@ The set of **accepted submissions** feature the contributions below. The corresp
 ```{r, echo=FALSE}
 meta <- rmdgallery::gallery_site_config()$gallery$meta
 
-# Create YAML file with the dynamic label for the eRum2020::CovidR badges
+# Infer the status of contributions and create YAML file with the dynamic label
+# for the eRum2020::CovidR badges
 short_list_status <- yaml::read_yaml("contributions/.short-list.yml")
-shields_text <- lapply(meta, function(page_meta) {
+# sorted as in short_list
+meta <- meta[order(match(names(meta), names(short_list_status)))]
+# infer awards from the `menu_icon` field and update the status
+awards <- vapply(meta, function(page_meta) page_meta$menu_icon %||% "", FUN.VALUE = "")
+short_list_status[names(awards)[grepl("trophy", awards)]] <- list("Winner")
+short_list_status[names(awards)[grepl("award", awards)]] <- list("Awardee")
+status_label <- lapply(meta, function(page_meta) {
   short_list_status[[page_meta$page_name]] %||% "Accepted"
 })
-yaml::write_yaml(shields_text, "badge-endpoint.yml")
+yaml::write_yaml(status_label, "badge-endpoint.yml")
+# split the page metadata by status
+status <- vapply(status_label, identity, FUN.VALUE = "")
+meta_by_status <- tapply(meta, status, identity)
 
 
 # Create the list of contributions
@@ -108,15 +118,24 @@ contributions_list <- function(meta) {
 
 <hr>
 
-The following contributions have been selected as **CovidR contest finalists**, and will be **presented at the e-Rum2020 pre-conference event** on May 29th.
-
+The **winners of the CovidR contest**, invited to present at the **main e-Rum2020 conference** are
 ```{r, echo=FALSE}
-# sorted as in short_list
-contributions_list(meta[intersect(names(short_list_status), names(meta))])
+contributions_list(meta_by_status$Winner)
 ```
 
-The other **accepted contributions** are listed below.
+The following are the contributions **awarded at the e-Rum2020 pre-conference event**
+```{r, echo=FALSE}
+contributions_list(meta_by_status$Awardee)
+```
+
+Other contributions selected as **CovidR contest finalists** and **presented at the e-Rum2020 pre-conference event** are
 
 ```{r, echo=FALSE}
-contributions_list(meta[!names(meta) %in% names(short_list_status)])
+contributions_list(meta_by_status$Finalist)
+```
+
+The following complete the set **accepted contributions**
+
+```{r, echo=FALSE}
+contributions_list(meta_by_status$Accepted)
 ```
