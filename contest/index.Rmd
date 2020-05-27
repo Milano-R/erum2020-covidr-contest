@@ -111,7 +111,8 @@ contributions_list <- function(meta) {
 The following contributions have been selected as **CovidR contest finalists**, and will be **presented at the e-Rum2020 pre-conference event** on May 29th.
 
 ```{r, echo=FALSE}
-contributions_list(meta[names(meta) %in% names(short_list_status)])
+# sorted as in short_list
+contributions_list(meta[intersect(names(short_list_status), names(meta))])
 ```
 
 The other **accepted contributions** are listed below.
