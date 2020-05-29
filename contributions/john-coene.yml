@@ -1,0 +1,17 @@
+# Contribution's title, author, abstract
+title: A Coronavirus Tracker, API & Crawler
+author: John Coene
+abstract: |
+  A tracker that uses three different sources of data to present the user with
+  a mobile-first application; the app, the API and its data crawler are both open-source.
+
+# Short name to be used in the website Gallery menu (can be the same as title)
+menu_entry: Coronavirus Tracker
+# URL of the public source code repository
+repository: https://github.com/JohnCoene/coronavirus
+# Type of contribution and how it can be featured as gallery content
+# Keep only the type and content relevant to your contribution
+# For a Shiny app, provide its URL:
+type: shiny
+content:  https://shiny.john-coene.com/coronavirus/
+date: 2020-05-11-00:00

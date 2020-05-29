@@ -1,0 +1,26 @@
+title: "COVOID: Modelling COVID-19 Transmission and Interventions"
+author: Oisin Fitzgerald, Mark Hanly, Tim Churches (UNSW Medicine)
+abstract: |
+  COVOID is an evolving but fully-functional R package and accompanying Shiny app
+  for simulation modelling of both COVID-19 transmission and the interventions
+  intended to reduce that transmission, using deterministic compartmental models
+  (DCMs). The built-in Shiny app enables ease of use and demonstration of key
+  concepts to those without R programming backgrounds. The package contains an
+  expanding API for simulating and estimating homogeneous and age-structured
+  SIR, SEIR and extended models. In particular COVOID allows the simultaneous
+  simulation of age specific (e.g. school closures) and general interventions
+  over varying time intervals. This is informed through incorporation of
+  publicly available data on population demographics from the United Nations,
+  age and setting specific contact rates from previously published research and
+  COVID-19 incidence counts from the European CDC. Technical background
+  documentation and vignettes are provided, illustrating the use of the package,
+  including the extended model. Work is ongoing to add the ability to model
+  imported cases, enhancing parameter fitting to observed data, and to expand
+  the Shiny UI to address the extended model and to manage parameter sensitivity
+  analyses and comparisons of intervention scenario.
+menu_entry: "COVOID: modelling transmission / interventions"
+menu_icon: i1 fa-trophy
+repository: https://github.com/CBDRH/covoid
+type: webpage
+content: https://cbdrh.github.io/covoidance/
+date: 2020-05-22-22:00

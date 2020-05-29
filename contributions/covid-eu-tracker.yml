@@ -1,0 +1,15 @@
+# Contribution's title, author, abstract
+title: Europe ETL, API & Tracker
+author: John Coene, Pierre Saouter, Julius Schulte, World Economic Forum Strategic Intelligence
+abstract: |
+  While many existing visualizations track the virus’ spread to European countries and provide country-level statistics, the focus of this project is to provide both country-level information for all European states in addition to provincial and regional figures where available.
+  A programmatic pipeline has been built to extract and process the data in a fully automated way, such as to ensure scalability as we add new data sources, full reproducibility, and minimize the risk for manual errors. This also allows us to provide the data back to the community in a structured format through various API endpoints.
+  The overall objective of this project is therefore to present a reproducible framework that could inspire better solutions to the problem of data management for reporting purposes in such crisis situations.
+
+# Short name to be used in the website Gallery menu (can be the same as title)
+menu_entry: Europe Tracker
+# URL of the public source code repository
+repository: https://github.com/forum-intelligence/covid-eu-tracker
+type: shiny
+content: https://tracker.weforum.org/
+date: 2020-05-22-19:30

@@ -1,0 +1,16 @@
+# Contribution's title, author, abstract
+title: 'COVID-19 in Belgium: is it over yet?'
+author: Antoine Soetewey
+abstract: |
+  This article shows the evolution of hospital admissions and number of new confirmed cases due to COVID-19 in Belgium.
+
+# Short name to be used in the website Gallery menu (can be the same as title)
+menu_entry: 'COVID-19 in Belgium: is it over yet?' 
+# URL of the public source code repository
+repository: https://github.com/AntoineSoetewey/statsandr/blob/master/content/blog/2020-05-22-covid-19-in-belgium-is-it-over-yet.Rmd
+# Type of contribution and how it can be featured as gallery content
+# Keep only the type and content relevant to your contribution
+# For a Shiny app, provide its URL:
+type: webpage
+content: https://www.statsandr.com/blog/covid-19-in-belgium-is-it-over-yet/
+date: 2020-05-22-23:59

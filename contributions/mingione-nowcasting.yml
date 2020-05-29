@@ -1,0 +1,19 @@
+# Contribution's title, author, abstract
+title: Nowcasting Italian Covid-19 Epidemic
+author: Marco Mingione, Pierfrancesco Alaimo Di Loro # comma-separated
+abstract: |
+  Our work is intended to give people an easy tool for accessing information
+  about the Italian COVID-19 epidemic in an interactive and transparent way.
+  The web application we built is automatically updated every day after the Italian Protezione Civile report ([Data Source](https://github.com/pcm-dpc/COVID-19))
+  and shows both descriptive and modeling analysis, giving the user the possibility to customize several choices. 
+ 
+# Short name to be used in the website Gallery menu (can be the same as title)
+menu_entry: NowCastingCOVID-19
+# URL of the public source code repository
+repository: https://github.com/minmar94/StatGroup19
+# Type of contribution and how it can be featured as gallery content
+# Keep only the type and content relevant to your contribution
+# For a Shiny app, provide its URL:
+type: shiny
+content: https://statgroup19.shinyapps.io/NowCastingCovid19/
+date: 2020-05-21-00:30

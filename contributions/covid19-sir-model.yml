@@ -1,0 +1,13 @@
+title: COVID-19 Time-Dependent SIR Model
+author: Michele Stefano Altieri, Hypermynds
+abstract: |
+  The R package covid19 is used to retrieve, analyse and represent Italian
+  data on the COVID19 outbreak and spreading. It also implements a
+  time-dependent SIR model to predict the epidemic evolution.
+  This package is built from data provided by the Civil Protection department
+  of the Italian Government through the COVID-19 repository.
+menu_entry: COVID-19 Time-Dependent SIR Model
+repository: https://github.com/hypermynds/covid19
+type: webpage
+content: https://covid19.hypermynds.com
+date: 2020-05-04-16:15

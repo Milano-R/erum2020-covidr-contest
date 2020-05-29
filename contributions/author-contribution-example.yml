@@ -1,0 +1,12 @@
+title: CovidR Contribution Example
+author: An Author, Another Author
+abstract: |
+  Short abstract with a brief description of the contribution and its main
+  features (max 800 characters, including spaces).
+  The usage of publicly available data should be explictly mentioned.
+  The text can be broken across multiple lines, each indented with two spaces.
+menu_entry: CovidR Example
+repository: https://github.com/Milano-R/erum2020-covidr-contest
+type: webpage
+content: https://example.com
+date: 2020-04-01-00:00

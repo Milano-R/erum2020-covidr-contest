@@ -1,0 +1,11 @@
+# Contribution's title, author, abstract
+title: "Real-time Interactive Global Distribution of 2019-nCov: Cases, Deaths, and Cases in Last 15 Days" 
+author: Matt Malishev
+abstract: |
+  Interactive map of coronavirus 2019-nCov global distribution using live webscraped data from the [European Centre for Disease Prevention and Control (ECDC)](https://www.ecdc.europa.eu/en/geographical-distribution-2019-ncov-cases).  
+  Data are for the country level showing cases, deaths, and cases in last 15 days, and show individual country rankings for these metrics.   
+menu_entry: Interactive map of 2019-nCov global distribution
+repository: https://github.com/darwinanddavis/worldmaps/blob/gh-pages/docs/coronavirus_.R
+type: webpage
+content: https://darwinanddavis.github.io/worldmaps/coronavirus.html # URL of the webpage
+date: 2020-05-04-16:00

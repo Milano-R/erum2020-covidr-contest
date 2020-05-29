@@ -1,0 +1,10 @@
+title: Scientific Papers Related to the COVID-19 Virus
+author: Juan Sokil, Observatorio-CTS
+abstract: |
+  This Shiny web app provides information updated daily on scientific papers related to the COVID-19 virus. The data is extracted from PubMed, a free search engine accessing primarily the MEDLINE database of references and abstracts on life sciences and medical topics. 
+  This app allows to analyze the scientific production by country, the scientific collaboration and the topics of research.
+menu_entry: COVID-19 Scientific Papers
+repository: https://github.com/juansokil/Covid-19
+type: shiny
+content: https://observatorio-cts.shinyapps.io/Covid-19/
+date: 2020-05-09-12:00

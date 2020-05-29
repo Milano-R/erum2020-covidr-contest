@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Submit :: e-Rum2020 CovidR</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+<link rel="icon" href="assets/eRum2020-icon-32x32.png" type="image/x-icon" />
+<!-- Same as in the main eRum2020 website -->
+<script type='text/javascript' src='https://2020.erum.io/wp-content/themes/jupiterx/lib/admin/assets/lib/webfont/webfont.min.js?ver=1.6.26'></script>
+<script type='text/javascript'>
+WebFont.load({
+  google: {
+    families: ['Roboto:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic']
+	}
+});
+</script>
+<script src="assets/main.js"></script>
+
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css" data-origin="pandoc">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; background-color: #ffffff; color: #1f1c1b; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; background-color: #ffffff; color: #a0a0a0; border-right: 1px solid #a0a0a0; }
+td.sourceCode { padding-left: 5px; }
+pre, code { color: #1f1c1b; background-color: #ffffff; }
+code > span.kw { color: #1f1c1b; font-weight: bold; } /* Keyword */
+code > span.dt { color: #0057ae; } /* DataType */
+code > span.dv { color: #b08000; } /* DecVal */
+code > span.bn { color: #b08000; } /* BaseN */
+code > span.fl { color: #b08000; } /* Float */
+code > span.cn { color: #aa5500; } /* Constant */
+code > span.ch { color: #924c9d; } /* Char */
+code > span.sc { color: #3daee9; } /* SpecialChar */
+code > span.st { color: #bf0303; } /* String */
+code > span.vs { color: #bf0303; } /* VerbatimString */
+code > span.ss { color: #ff5500; } /* SpecialString */
+code > span.im { color: #ff5500; } /* Import */
+code > span.co { color: #898887; } /* Comment */
+code > span.do { color: #607880; } /* Documentation */
+code > span.an { color: #ca60ca; } /* Annotation */
+code > span.cv { color: #0095ff; } /* CommentVar */
+code > span.ot { color: #006e28; } /* Other */
+code > span.fu { color: #644a9b; } /* Function */
+code > span.va { color: #0057ae; } /* Variable */
+code > span.cf { color: #1f1c1b; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #1f1c1b; } /* Operator */
+code > span.bu { color: #644a9b; font-weight: bold; } /* BuiltIn */
+code > span.ex { color: #0095ff; font-weight: bold; } /* Extension */
+code > span.pp { color: #006e28; } /* Preprocessor */
+code > span.at { color: #0057ae; } /* Attribute */
+code > span.re { color: #0057ae; } /* RegionMarker */
+code > span.in { color: #b08000; } /* Information */
+code > span.wa { color: #bf0303; } /* Warning */
+code > span.al { color: #bf0303; font-weight: bold; } /* Alert */
+code > span.er { color: #bf0303; text-decoration: underline; } /* Error */
+code > span. { color: #1f1c1b; } /* Normal */
+
+</style>
+<script>
+// apply pandoc div.sourceCode style to pre.sourceCode instead
+(function() {
+  var sheets = document.styleSheets;
+  for (var i = 0; i < sheets.length; i++) {
+    if (sheets[i].ownerNode.dataset["origin"] !== "pandoc") continue;
+    try { var rules = sheets[i].cssRules; } catch (e) { continue; }
+    for (var j = 0; j < rules.length; j++) {
+      var rule = rules[j];
+      // check if there is a div.sourceCode rule
+      if (rule.type !== rule.STYLE_RULE || rule.selectorText !== "div.sourceCode") continue;
+      var style = rule.style.cssText;
+      // check if color or background-color is set
+      if (rule.style.color === '' && rule.style.backgroundColor === '') continue;
+      // replace div.sourceCode by a pre.sourceCode rule
+      sheets[i].deleteRule(j);
+      sheets[i].insertRule('pre.sourceCode{' + style + '}', j);
+    }
+  }
+})();
+</script>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="assets/styles.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-erum2020  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">eRum2020::CovidR</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">
+    <span class="fa fa-home"></span>
+     
+    
+  </a>
+</li>
+<li>
+  <a href="about.html">
+    <span class="fa fa-info"></span>
+     
+    About
+  </a>
+</li>
+<li>
+  <a href="submit.html">
+    <span class="fa fa-arrow-circle-up"></span>
+     
+    Submit
+  </a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-folder-open"></span>
+     
+    Gallery
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="fitzgerald-hanly-churches-covoid-simulation-modelling.html">
+        <span class="i1 fa i1 fa-trophy"></span>
+         
+        COVOID: modelling transmission / interventions
+      </a>
+    </li>
+    <li>
+      <a href="covid19datahub.html">
+        <span class="i1 fa i1 fa-trophy"></span>
+         
+        COVID-19 Data Hub
+      </a>
+    </li>
+    <li>
+      <a href="trendecon.html">
+        <span class="i2 fa i2 fa-award"></span>
+         
+        Daily economic indicators
+      </a>
+    </li>
+    <li>
+      <a href="eric-covid19ke.html">
+        <span class="i2 fa i2 fa-award"></span>
+         
+        Covid_19 Kenya
+      </a>
+    </li>
+    <li>
+      <a href="phillips-et-al-nCovForecast.html">
+        <span class="i2 fa i2 fa-award"></span>
+         
+        The ten-day coronavirus forecast
+      </a>
+    </li>
+    <li>
+      <a href="bulletin-board-japan.html">
+        <span class="i2 fa i2 fa-award"></span>
+         
+        COVID-19 Bulletin Board Japan
+      </a>
+    </li>
+    <li>
+      <a href="afrimapr-healthsites-africa.html">100 k African Hospital and Health Facilities</a>
+    </li>
+    <li>
+      <a href="antoine-soetewey-covid-19-in-belgium-is-it-over-yet.html">COVID-19 in Belgium: is it over yet?</a>
+    </li>
+    <li>
+      <a href="kode-mint.html">MINT - Monitoring Italian contagion trends</a>
+    </li>
+    <li>
+      <a href="kode-prime-minister-speech.html">The Prime Minister's Speech(es)</a>
+    </li>
+    <li>
+      <a href="pangea-Covid19.html">PangeaCovid19</a>
+    </li>
+    <li>
+      <a href="churches-tierney-ozcoviz-dashboard-covidrecon-package.html">OzCoViz dashboard and the covidrecon package</a>
+    </li>
+    <li>
+      <a href="covid-eu-tracker.html">Europe Tracker</a>
+    </li>
+    <li>
+      <a href="hichammoadsafhi-covid19-data-veracity.html">Fighting misinformation</a>
+    </li>
+    <li>
+      <a href="antoine-soetewey-how-to-create-a-simple-covid-19-dashboard.html">Country-specific Coronavirus Dashboard How-To</a>
+    </li>
+    <li>
+      <a href="tdesmedt-covid19-explorer.html">Covid19-Explorer</a>
+    </li>
+    <li>
+      <a href="serdar-korur.html">cRew Symptom Tracker</a>
+    </li>
+    <li>
+      <a href="mingione-nowcasting.html">NowCastingCOVID-19</a>
+    </li>
+    <li>
+      <a href="hammerschmidt-meyer-coro2vid-19.html">Coro2vid-19</a>
+    </li>
+    <li>
+      <a href="srinathkr-covid19-in-india.html">COVID-19 in India</a>
+    </li>
+    <li>
+      <a href="simmie-covid19-nlp.html">Covid'19 Twitter Analytics</a>
+    </li>
+    <li>
+      <a href="fanelli-covid-19-italy-dashboard.html">Covid-19 in Italy</a>
+    </li>
+    <li>
+      <a href="shubhrampandey-covid19-monitor.html">COVID-19 Monitor</a>
+    </li>
+    <li>
+      <a href="petr-baranovskiy-covid-ca-data-explorer.html">COVID-19 Canada Data Explorer</a>
+    </li>
+    <li>
+      <a href="hahn-covid-shinyline.html">Covid Shinyline</a>
+    </li>
+    <li>
+      <a href="laurinec-CoronaDash.html">CoronaDash - clustering-analytical tool</a>
+    </li>
+    <li>
+      <a href="john-coene.html">Coronavirus Tracker</a>
+    </li>
+    <li>
+      <a href="danese-covid19-understanding.html">Understanding COVID-19 with Excess Deaths</a>
+    </li>
+    <li>
+      <a href="sokil-papers-covid19.html">COVID-19 Scientific Papers</a>
+    </li>
+    <li>
+      <a href="tim-churches-COVID-19-blog-posts.html">COVID-19 and R blog series</a>
+    </li>
+    <li>
+      <a href="schoenenberger-globalCovidDashboard.html">Global COVID-19 Dashboard</a>
+    </li>
+    <li>
+      <a href="covid19-sir-model.html">COVID-19 Time-Dependent SIR Model</a>
+    </li>
+    <li>
+      <a href="malishev-covid19.html">Interactive map of 2019-nCov global distribution</a>
+    </li>
+    <li>
+      <a href="rako-CoDaP.html">Covid19 Data and Perception (CoDaP)</a>
+    </li>
+    <li>
+      <a href="vitalini-covid19.html">Covid19 Shiny App</a>
+    </li>
+    <li>
+      <a href="author-contribution-example.html">CovidR Example</a>
+    </li>
+  </ul>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="https://2020.erum.io/">e-Rum2020</a>
+</li>
+<li>
+  <a href="https://github.com/Milano-R/erum2020-covidr-contest">
+    <span class="fa fa-github"></span>
+     
+    
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Submit :: e-Rum2020 CovidR</h1>
+
+</div>
+
+
+<h1>
+Submit your Contribution
+</h1>
+<div id="contributions-are-no-longer-accepted" class="section level2">
+<h2>Contributions are no longer accepted</h2>
+<p><strong>Submissions to e-Rum2020 CovidR contest closed on May 22nd 23:59 CEST.</strong></p>
+<hr />
+<p>Each participant is requested to provide the following information in YAML format, which will allow the contribution to be integrated and be visible in the <a href="https://milano-r.github.io/erum2020-covidr-contest">CovidR Gallery</a></p>
+<div class="sourceCode"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span class="co"># Contribution&#39;s title, author, abstract</span>
+<span class="fu">title:</span><span class="at"> An Awesome COVID-19 Contribution </span><span class="co"># title case</span>
+<span class="fu">author:</span><span class="at"> An Author, Another Author </span><span class="co"># comma-separated</span>
+<span class="fu">abstract:</span><span class="at"> |</span>
+  Provide a short abstract with a brief description of your contribution and its
+  main features (max 800 characters, including spaces). The usage of publicly
+  available data should be explictly mentioned.
+  The text can be broken across multiple lines, each indented with two spaces.
+
+<span class="co"># Short name to be used in the website Gallery menu (can be the same as title)</span>
+<span class="fu">menu_entry:</span><span class="at"> Short title</span>
+<span class="co"># URL of the public source code repository</span>
+<span class="fu">repository:</span><span class="at"> https://github.com/user/repo</span>
+<span class="co"># Type of contribution and how it can be featured as gallery content</span>
+<span class="co"># Keep only the type and content relevant to your contribution</span>
+<span class="co"># For a Shiny app, provide its URL:</span>
+<span class="fu">type:</span><span class="at"> shiny</span>
+<span class="fu">content:</span><span class="at"> https://user.shinyapps.io/my-app </span><span class="co"># e.g. my-app on shinyapps.io</span>
+<span class="co"># For a general online-published resource (e.g. a website / report):</span>
+<span class="fu">type:</span><span class="at"> webpage</span>
+<span class="fu">content:</span><span class="at"> https://user.github.io/my-analysis </span><span class="co"># URL of the webpage</span>
+<span class="co"># For more complex / heterogeneous contributions, you can create a GitHub</span>
+<span class="co"># Gist (https://gist.github.com/) with the relevant information and pointers:</span>
+<span class="fu">type:</span><span class="at"> gist</span>
+<span class="fu">content:</span><span class="at"> &lt;script...&gt; </span><span class="co"># place here what you get from the &quot;Embed&quot; button</span></code></pre></div>
+<p>If you are not sure about some of the fields, we encourage you to still open a Pull Request or a New Issue as described below, as part of which we will discuss and take care of the remaining details.</p>
+<div id="how-to-submit" class="section level3">
+<h3>How to submit</h3>
+<p>You can submit your contribution <strong>until May 22nd</strong> using one of the following methods</p>
+<ol style="list-style-type: decimal">
+<li><strong>Pull Request</strong>
+<ul>
+<li><a href="https://github.com/Milano-R/erum2020-covidr-contest/fork"><strong>Fork the repository</strong></a> and create a <strong>new <code>.yml</code> file</strong> under <a href="https://github.com/Milano-R/erum2020-covidr-contest/tree/master/contest/contributions"><code>contest/contributions</code></a>, containing the information above for your contribution.
+<ul>
+<li>The example above is available as <a href="https://github.com/Milano-R/erum2020-covidr-contest/tree/master/contest/contributions/.example.yml"><code>.example.yml</code></a> and can be used as a starting point.</li>
+<li>The file-name should somehow identify your contribution, we recommend using something like <code>name-short-title.yml</code>.</li>
+</ul></li>
+<li>Create a <strong>Pull Request</strong>, making sure you “Allow edits from maintainers”.</li>
+<li>Send us an email at <a href="mailto:covidrcontest@erum.io">covidrcontest@erum.io</a> with the link to the Pull Request.</li>
+<li>You can also preview the integration of your contribution in the <a href="https://milano-r.github.io/erum2020-covidr-contest">CovidR Gallery</a> from a local clone of your fork via</li>
+<li><code>remotes::install_deps()</code></li>
+<li><code>browseURL(file.path(&quot;contest&quot;, rmarkdown::render_site(&quot;contest&quot;)))</code></li>
+</ul></li>
+<li><strong>Create an Issue</strong>
+<ul>
+<li><a href="https://github.com/Milano-R/erum2020-covidr-contest/issues/new/choose"><strong>Submit the contribution as new Issue</strong></a> to provide the required information.</li>
+<li>We will follow up by creating the relevant <code>.yml</code> file and corresponding pull request.</li>
+<li>Send us an email at <a href="mailto:covidrcontest@erum.io">covidrcontest@erum.io</a> with the link to the Issue.</li>
+</ul></li>
+</ol>
+<p>Your submission will be officially accepted once the corresponding Pull Request is reviewed, approved, and merged. Your contribution will then appear in the <a href="https://milano-r.github.io/erum2020-covidr-contest">CovidR Gallery</a>.</p>
+<p>The following video tutorial illustrates the submission process described above:</p>
+<center>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/pqrcxRL7AtU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+</center>
+<p/>
+<p>If you have any problems you can also contact us at: <a href="mailto:covidrcontest@erum.io">covidrcontest@erum.io</a>.</p>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

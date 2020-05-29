@@ -1,0 +1,11 @@
+title: Covid19 Data and Perception Application (CoDaP)
+author: Sabina Rako
+abstract: |
+  Covid19 Data and Perception (CoDaP) is a Shiny web app created based on open results of International
+  Survey on Coronavirus (https://covid19-survey.org/) and open epidemilogical data from 
+  European Centre for Disease Prevention and Control (https://www.ecdc.europa.eu/en).
+menu_entry: Covid19 Data and Perception (CoDaP)
+repository: https://github.com/SabinaRa/CoDaP
+type: shiny
+content: https://sabinar.shinyapps.io/CoDaP/
+date: 2020-05-02-14:00

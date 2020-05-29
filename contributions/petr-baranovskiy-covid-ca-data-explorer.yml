@@ -1,0 +1,14 @@
+title: COVID-19 Canada Data Explorer
+author: Petr Baranovskiy
+abstract: |
+  COVID-19 Canada Data Explorer is an interactive Shiny app to break down and analyze
+  the official COVID-19 dataset available from the Government of Canada
+  (https://health-infobase.canada.ca/src/data/covidLive/covid19.csv).
+  The app can be used to visualize 13 different indicators by time and geography, and
+  to directly compare the epidemiological situation across Canada's provinces and
+  territories. It also allows users to custom-build and download their own datasets.
+menu_entry: COVID-19 Canada Data Explorer
+repository: https://github.com/baranovskypd/covid_ca_covidr
+type: shiny
+content: https://peterbar.shinyapps.io/covid_ca_covidr/
+date: 2020-05-18-15:00

@@ -1,0 +1,12 @@
+
+title: COVID-19 Global Cases - Open Source Dashboard
+author: Christoph Schoenenberger
+abstract: |
+  This dashboard shows recent developments of the COVID-19 pandemic. The latest
+  data on the COVID-19 spread are regularly downloaded from Johns Hopkins University 
+  and displayed in a map, summary tables, key figures and plots.
+menu_entry: Global COVID-19 Dashboard
+repository: https://github.com/chschoenenberger/covid19_dashboard
+type: shiny
+content: https://chschoenenberger.shinyapps.io/covid19_dashboard/ # e.g. my-app on shinyapps.io
+date: 2020-05-06-19:00

@@ -1,0 +1,16 @@
+title: COVID-19 in India - An Analysis
+author: Srinath K R
+abstract: |
+  COVID-19 in India - An Analysis is a dashboard/tracker made to understand the spread of the Novel Coronavirus (COVID-19) pandemic across India.
+  The data source is COVID-19 India API, a volunteer-driven API for COVID-19 stats in India which collects data from official press bulletins and reports released by various states.
+  This project provides a summary of all types of cases reported, for the entire country in total and for each state; provides state-wise analysis with the help of a plot and a map and provides both cumulative and daily trends in cases.
+  The main feature of this project is the SIR (Susceptible - Infectious - Recovered) model. This model has been applied for India for a period of 150 days starting from March 1, 2020. Based on this, R0 is also calculated.
+
+menu_entry: COVID-19 in India
+repository: https://github.com/srinathkr07/COVID-19-in-India/
+type: shiny
+iframe_resizer: false
+css:
+  min-height: calc(100vh - 50px)
+content: https://srinathkr.shinyapps.io/COVID19-India/
+date: 2020-05-19-17:30

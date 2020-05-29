@@ -1,0 +1,11 @@
+title: Global Covid-19 Explorer
+author: Tom De Smedt, DataHive
+abstract: |
+  The Global Covid-19 Explorer is a shiny dashboard using interactive visualizations with innovative metrics to compare the Covid-19 burden in different countries.
+
+menu_entry: Covid19-Explorer
+repository: https://github.com/tdesmedt-tdsgn/Covid-Explorer
+type: shiny
+iframe_resizer: false
+content: https://datahive.shinyapps.io/Covid19-Explorer/
+date: 2020-05-22-11:30
