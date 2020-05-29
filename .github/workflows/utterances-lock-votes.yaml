@@ -53,7 +53,7 @@ jobs:
           votes <- lock_utterances_issues(
             owner = "Milano-R",
             repo = "erum2020-covidr-contest",
-            dry_run = TRUE
+            dry_run = FALSE
           )
           message("Votes from ", length(unique(votes$vote)), " users")
           votes <- aggregate(votes["vote"], votes["page_name"], length)
