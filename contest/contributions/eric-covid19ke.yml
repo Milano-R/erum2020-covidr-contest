@@ -6,6 +6,7 @@ abstract:
  It also visualises the total cases globally and then focuses on the cases in Africa and its respective countries. The input data for
  this dashboard is the coronavirus R package (dev version) by Rami Krispin and the Ministry of Health, Kenya.
 menu_entry: Covid_19 Kenya
+menu_icon: i2 fa-award
 repository: https://github.com/R-icntay/covid19_ke
 type: webpage
 css:

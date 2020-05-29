@@ -19,6 +19,7 @@ abstract: |
   these results in a research paper.
 # Short name to be used in the website Gallery menu (can be the same as title)
 menu_entry: Daily economic indicators
+menu_icon: i2 fa-award
 # URL of the public source code repository
 repository: https://github.com/trendecon
 type: gist
