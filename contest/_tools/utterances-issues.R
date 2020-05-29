@@ -245,7 +245,7 @@ lock_utterances_issues <- function(owner, repo, dry_run = FALSE) {
     if (!isTRUE(dry_run)) {
       gh(
         method = "PUT", "issues/:issue_number/lock",
-        issue_number = issues,
+        issue_number = issue$number,
         .accept = "application/vnd.github.sailor-v-preview+json"
       )
     }
