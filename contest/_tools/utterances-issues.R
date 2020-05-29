@@ -10,6 +10,53 @@ gh_wrapper <- function(owner, repo) {
   }
 }
 
+get_utterances_issues <- function(gh) {
+  issues <- gh("issues", state = "all", labels = ":+1:", per_page = 100)
+  names(issues) <- basename(vapply(issues, `[[`, "title", FUN.VALUE = ""))
+  issues
+}
+
+get_issue_votes <- function(issue) {
+  vote_comment <- gh::gh(issue$comments_url, .accept = "application/vnd.github.squirrel-girl-preview")[[1L]]
+  stopifnot(vote_comment$user$type == "Bot")
+  reactions <- gh::gh(
+    vote_comment$reactions$url,
+    .accept = "application/vnd.github.squirrel-girl-preview",
+    per_page = 100
+  )
+  # +1 reactions from non-bot users (to exclude the +1 from the vote comment
+  # creation and potentially other bots)
+  vote_reactions <- reactions[
+    vapply(reactions, function(x) x$content == "+1" && x$user$type != "Bot", FUN.VALUE = FALSE)
+    ]
+  vapply(vote_reactions, `[[`, c("user", "login"), FUN.VALUE = "")
+}
+
+tidy_votes <- function(votes) {
+  do.call(
+    "rbind",
+    lapply(names(votes), function(x) {
+      if (length(votes[[x]]) > 0L) {
+        data.frame(page_name = x, vote = votes[[x]])
+      }
+    })
+  )
+}
+
+get_utterances_votes <- function(meta, owner, repo) {
+  gh <- gh_wrapper(owner, repo)
+  utterances_issues <- get_utterances_issues(gh)
+  stopifnot(all(names(meta) %in% names(utterances_issues)))
+  utterances_issues <- utterances_issues[names(meta)]
+  votes <- lapply(utterances_issues, get_issue_votes)
+  votes_tidy <- tidy_votes(vote)
+  votes_tidy
+}
+# meta <- rmdgallery::gallery_site_config("contest")$gallery$meta
+# votes <- get_utterances_votes(meta, "Milano-R", "erum2020-covidr-contest")
+# sort(table(votes$vote))
+# sort(table(votes$page_name))
+
 
 # Create utterances issues for the gallery pages based on their `meta`data.
 # Issues are created for gallery pages of the given `site` URL, and feature an
@@ -77,8 +124,8 @@ create_utterances_issues <- function(meta, owner, repo,
   }
 
   existing_titles <- vapply(
-    gh("issues", state = "all", labels = ":+1:", per_page = 100), FUN.VALUE = "",
-    `[[`, "title"
+    get_utterances_issues(gh),
+    `[[`, "title", FUN.VALUE = ""
   )
 
   missing_meta <- meta[!issue_title(names(meta)) %in% existing_titles]
@@ -168,7 +215,7 @@ cleanup_utterances_comments <- function(owner, repo,
     if (!is.null(notification_comment)) {
       message("  | ", gsub("\n", "\n  | ", notification_comment))
       if (!dry_run) {
-        comment <-   gh(
+        comment <- gh(
           method = "POST",
           sprintf("issues/%d/comments", issue$number),
           body = notification_comment
@@ -180,8 +227,36 @@ cleanup_utterances_comments <- function(owner, repo,
 
   }
 
-  utterances_issues <- gh("issues", state = "all", labels = ":+1:", per_page = 100)
+  utterances_issues <- get_utterances_issues(gh)
   lapply(utterances_issues, cleanup_issue)
   invisible(NULL)
 
+}
+
+
+# Lock voting issues and returns the votes
+lock_utterances_issues <- function(owner, repo, dry_run = FALSE) {
+
+  # GitHub API for the given owner and repo
+  gh <- gh_wrapper(owner, repo)
+
+  lock_issue <- function(issue) {
+    message("Processing issue #", issue$number, " (", issue$title, ")")
+    if (!isTRUE(dry_run)) {
+      gh(
+        method = "PUT", "issues/:issue_number/lock",
+        issue_number = issues,
+        .accept = "application/vnd.github.sailor-v-preview+json"
+      )
+    }
+    # return the votes
+    votes <- get_issue_votes(issue)
+    message("> ", length(votes), " vote(s)")
+    votes
+  }
+
+  utterances_issues <- get_utterances_issues(gh)
+  votes <- tidy_votes(lapply(utterances_issues, lock_issue))
+
+  invisible(votes)
 }
